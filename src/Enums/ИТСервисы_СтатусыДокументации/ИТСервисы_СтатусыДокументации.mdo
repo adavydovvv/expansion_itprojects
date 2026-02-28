@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="641a6881-7b6c-4bef-9c02-62e43d5e879f">
+  <producedTypes>
+    <refType typeId="c26277b5-eb51-46ce-8835-fc90215905d1" valueTypeId="ae4b26e0-2b56-42e6-9859-b86789361cbc"/>
+    <listType typeId="4e64cdc4-3573-416c-968a-dc8e1b51bdb2" valueTypeId="191b9399-d3d9-41b5-b41d-c92f2414e3a0"/>
+    <managerType typeId="68fabf0b-b994-4eba-b0a7-f3b4e36d179e" valueTypeId="5b37db98-c7d0-46c8-a535-b52d86e3690d"/>
+  </producedTypes>
+  <name>ИТСервисы_СтатусыДокументации</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТСервисы статусы документации</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="302f7666-b35e-4356-b40f-db4687f9cdfe">
+    <name>Действует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ed5de8fd-544b-4b7c-aff0-f113f73ecf23">
+    <name>Отсутствует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отсутствует</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="376f44cd-ae70-4564-a8bf-10c2862e32e7">
+    <name>Устаревает</name>
+    <synonym>
+      <key>ru</key>
+      <value>Устаревает</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ec0784a6-32e6-4ef9-a28c-bbcce9d4a043">
+    <name>НаСогласовании</name>
+    <synonym>
+      <key>ru</key>
+      <value>На согласовании</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

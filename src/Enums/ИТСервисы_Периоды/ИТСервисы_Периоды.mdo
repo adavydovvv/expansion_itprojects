@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1bfdd90a-8bc8-468b-b9bc-c171d41aa2e2">
+  <producedTypes>
+    <refType typeId="876540ec-4c05-483e-9223-ca1bbd88603a" valueTypeId="a2ee1b28-473f-48d4-8b8d-924d9d2ca979"/>
+    <listType typeId="93ebb9d1-d43a-4ac1-b7af-62818d3a2c82" valueTypeId="e90c22bd-aacc-472f-ba77-82ccc05f7b6e"/>
+    <managerType typeId="6f7549cc-c08b-4286-9f98-dd50eaf1483b" valueTypeId="8f5e7bb5-3de3-4633-9a6d-3f30dad87bf0"/>
+  </producedTypes>
+  <name>ИТСервисы_Периоды</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТСервисы периоды</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="baf195d0-3b41-440b-96a3-d89c0c8aada1">
+    <name>Ежемесячно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ежемесячно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="66a8b3c4-206b-458e-8304-b12bda19966c">
+    <name>Ежеквартально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ежеквартально</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="530e16bf-1633-447f-a835-077322cb30e5">
+    <name>Ежегодно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ежегодно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fb0c6a13-3a4f-419c-83ba-a4c51b31848d">
+    <name>Разово</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разово</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e7d021bf-7b3e-4bf5-a982-c6c1eca5a3bb">
+  <name>ИТСервисы_ИТСервисы</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТ-Сервисы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ИТСервисы</picture>
+  </picture>
+  <content>Enum.ИТСервисы_СтатусыСервисов</content>
+  <content>Enum.ИТСервисы_СтатусыПрогноза</content>
+  <content>Enum.ИТСервисы_СтатусыДокументации</content>
+  <content>Enum.ИТСервисы_СтатусыДокументаНазначения</content>
+  <content>Enum.ИТСервисы_Периоды</content>
+  <content>Enum.ИТСервисы_СтатусыДоговоров</content>
+  <content>Enum.ИТСервисы_ТипыДоговоров</content>
+  <content>Enum.ИТСервисы_ТипыПриказовПоСервисам</content>
+  <content>Enum.ИТСервисы_СтатусыДокументов</content>
+  <subsystems>СправочникиПодсистема</subsystems>
+  <subsystems>ДокументыПодсистема</subsystems>
+  <subsystems>АналитикаПодсистема</subsystems>
+</mdclass:Subsystem>

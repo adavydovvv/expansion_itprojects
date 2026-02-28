@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59803270-7f4e-40a8-8c19-12823a010cbc">
+  <producedTypes>
+    <selectionType typeId="962c76ae-7b61-437e-82b7-cc233b23b73d" valueTypeId="246fa7d0-6c03-4dc2-91b1-17b2ae8d9dd3"/>
+    <listType typeId="38327821-4a5f-41b7-a6db-48f051ae2269" valueTypeId="c69b535f-d090-46af-b788-a7d7671f550a"/>
+    <managerType typeId="17f8df7d-fea6-430d-b02e-007865273d64" valueTypeId="90389a9e-b264-4a41-856b-d1b69171b9f2"/>
+    <recordSetType typeId="7d8e7462-a1a1-4b9c-897a-de349ee483e2" valueTypeId="baf51f0a-9b60-41fb-a411-324615c17cd0"/>
+    <recordKeyType typeId="5a93f8df-520d-4ffb-b5ed-d58a7e6f2759" valueTypeId="46722417-347c-4a26-b514-b00cefa1b7f3"/>
+    <recordType typeId="421a455b-f55b-4267-850e-2a5664d2065a" valueTypeId="31520eb4-d63c-4c51-a273-54096e4bd218"/>
+  </producedTypes>
+  <name>ИТСервисы_ДвижениеДоговоровСервисов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движение договоров сервисов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="3988ba66-7489-405b-a0d0-744248e14867">
+    <name>ВсегоДоговоров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Всего договоров</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="a4e882fe-bb0b-4ba4-9828-e958b44384aa">
+    <name>СуммаДоговоров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма договоров</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="c8998bee-784c-4db5-a2ab-d8458ddf4fb7">
+    <name>ДоговоровАктивных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договоров активных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="2aed2393-2f39-4e58-b4ce-7f23c2878ec5">
+    <name>ИТСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИТ Сервис</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a65f04f2-b8d8-49e2-8a1c-495c91db4c76">
+    <name>ТехПровайдер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тех провайдер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

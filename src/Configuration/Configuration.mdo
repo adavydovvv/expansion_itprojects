@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="ed3bde69-2007-48fe-8fe2-9b8bfacd8291">
+  <name>ИтСервисыХолдинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТ-Сервисы холдинга</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <homePageWorkArea>Extended</homePageWorkArea>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="f93176cb-9db3-414c-8624-11b72b34367e"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="23c07703-8461-4d8f-8516-49ba67ed2678"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="daa9d948-d35c-453e-99d1-443691534389"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="a9977ba3-81a6-4a11-b355-4fd3e8cb530d"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="9a02fad9-a801-4b17-91a8-5826a4df1d48"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="e066ed84-ecc0-4da8-b397-4c483c736050"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="d414207e-19dc-4d51-b59a-486f0b170f8c"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>ИТСервисы_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.27</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <languages uuid="0f05f4c6-750b-4938-bde6-5da47ccde9fb" extendedConfigurationObject="0663bf5b-bcba-4a40-a862-a0b3baa2d884">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.ИТСервисы_ИТСервисы</subsystems>
+  <commonPictures>CommonPicture.ИТСервисы</commonPictures>
+  <roles>Role.ИТСервисы_Роль1</roles>
+  <catalogs>Catalog.ИТСервисы_ИТСервисы</catalogs>
+  <catalogs>Catalog.Сотрудники</catalogs>
+  <catalogs>Catalog.ИТСервисы_РолиВПроектах</catalogs>
+  <catalogs>Catalog.ИТСервисы_ТипыДокументацииСервисов</catalogs>
+  <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <documents>Document.ИТСервисы_РесурсныйДоговор</documents>
+  <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
+  <documents>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</documents>
+  <documents>Document.ИТСервисы_ПланТиражированияСервиса</documents>
+  <documents>Document.ИТСервисы_ИзминениеПараметровИТСервиса</documents>
+  <enums>Enum.ИТСервисы_СтатусыСервисов</enums>
+  <enums>Enum.ИТСервисы_СтатусыПрогноза</enums>
+  <enums>Enum.ИТСервисы_СтатусыДокументации</enums>
+  <enums>Enum.ИТСервисы_СтатусыДокументаНазначения</enums>
+  <enums>Enum.ИТСервисы_ТипыДоговоров</enums>
+  <enums>Enum.ИТСервисы_СтатусыДоговоров</enums>
+  <enums>Enum.ИТСервисы_Периоды</enums>
+  <enums>Enum.ИТСервисы_ТипыПриказовПоСервисам</enums>
+  <enums>Enum.ИТСервисы_СтатусыДокументов</enums>
+  <reports>Report.ИТСервисы_СводнаяТаблица</reports>
+  <informationRegisters>InformationRegister.ИТСервисы_ДокументацияСервисов</informationRegisters>
+  <informationRegisters>InformationRegister.ИТСервисы_ПараметрыИТСервисов</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</accumulationRegisters>
+</mdclass:Configuration>

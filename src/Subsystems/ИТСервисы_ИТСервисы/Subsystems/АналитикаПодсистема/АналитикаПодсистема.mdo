@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4d5f5bf-5f53-4b12-9cdf-292f6ee9407f">
+  <name>АналитикаПодсистема</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аналитика</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</content>
+  <content>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</content>
+  <content>InformationRegister.ИТСервисы_ДокументацияСервисов</content>
+  <content>Report.ИТСервисы_СводнаяТаблица</content>
+  <content>InformationRegister.ИТСервисы_ПараметрыИТСервисов</content>
+  <parentSubsystem>Subsystem.ИТСервисы_ИТСервисы</parentSubsystem>
+</mdclass:Subsystem>

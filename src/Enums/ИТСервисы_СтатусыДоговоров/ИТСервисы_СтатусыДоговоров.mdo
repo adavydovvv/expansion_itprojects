@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31167c08-7db6-4c1f-b99c-6e954462bcf9">
+  <producedTypes>
+    <refType typeId="e3669d82-b77f-4516-a9d7-78e7f399a240" valueTypeId="26abc267-0c9e-4de7-ab0c-9c3c74147ccd"/>
+    <listType typeId="5ac41c01-a30d-4640-95c0-98adaf996e66" valueTypeId="61a82519-7cf0-49d0-b56f-6fb164959b6d"/>
+    <managerType typeId="908da712-4686-40e9-8db6-a7738b763b4c" valueTypeId="0353ab15-d14c-4879-9ad1-c270d3ad395c"/>
+  </producedTypes>
+  <name>ИТСервисы_СтатусыДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТСервисы статусы договоров</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8c93563d-c1c3-4353-a3b1-bb41c88b1265">
+    <name>Истек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Истек</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ef887e67-29a9-41ef-8229-078b83188b75">
+    <name>Истекает</name>
+    <synonym>
+      <key>ru</key>
+      <value>Истекает</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a7aa0015-ac18-45ec-b0d1-cf0bdd5ad8fc">
+    <name>Активен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

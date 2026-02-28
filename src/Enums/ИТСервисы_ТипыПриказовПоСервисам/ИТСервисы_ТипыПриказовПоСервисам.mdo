@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10fb12e0-f34f-4f5b-829e-43da1b184a2b">
+  <producedTypes>
+    <refType typeId="6be6f87c-dc5f-4f47-a919-25a3f72ccad3" valueTypeId="a7c1becd-38c2-46e1-974b-0c8236cd11d2"/>
+    <listType typeId="5b3fe032-36c9-4c4f-8f47-bb7a17023b0a" valueTypeId="73696cbe-a4b9-4c33-9924-d31a3d7e988a"/>
+    <managerType typeId="6ad35ce2-3b43-40c3-bbb4-5de77cbb4007" valueTypeId="8d1e573d-b787-49f1-bf85-d9eb8c73035e"/>
+  </producedTypes>
+  <name>ИТСервисы_ТипыПриказовПоСервисам</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТСервисы типы приказов по сервисам</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c00e54a2-4a40-44b1-84ee-b0c663434553">
+    <name>СтартПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старт проекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="87ee23cc-cbf6-41ae-9686-19cae74b08ea">
+    <name>ВводВЭксплуатацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод в эксплуатацию</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c010f563-9f13-4b62-a912-644fdda99bee">
+    <name>ПереводНаПоддержку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перевод на поддержку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1fa46fa9-3e5f-4c4f-bab4-44c5d716ec7e">
+    <name>ВыводИзЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вывод из эксплуатации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d820d027-3a9e-4136-882d-751040849315">
+    <name>Приостановка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приостановка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

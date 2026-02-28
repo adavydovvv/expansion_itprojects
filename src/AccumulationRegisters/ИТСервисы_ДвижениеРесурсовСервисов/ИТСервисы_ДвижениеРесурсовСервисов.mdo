@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a65d3f99-9816-481b-8413-3dd00ae54b25">
+  <producedTypes>
+    <selectionType typeId="761ffa8c-c828-4fb0-90b2-1a286820c0c0" valueTypeId="ed4e981b-10ed-4632-962b-27bddd911145"/>
+    <listType typeId="52c91555-c83c-4460-a9fb-465febf8d172" valueTypeId="456a2f3f-6b2a-4054-98ab-31c46d27a13d"/>
+    <managerType typeId="694b47ff-c65b-4c39-8666-fb8a32e7de64" valueTypeId="f0c25a00-7e8e-421d-86a4-2d0158d11904"/>
+    <recordSetType typeId="6b6e738e-6332-46a0-8c39-e6b6dfe62bc7" valueTypeId="35ff8a54-7a02-440e-a936-401eb96af8e4"/>
+    <recordKeyType typeId="34d837d9-ab36-4f3b-8050-5da69eb8c3f0" valueTypeId="536e9aa6-b807-46d2-a4bc-15065a01778e"/>
+    <recordType typeId="e257023c-3019-41b6-a71f-f782f2194c86" valueTypeId="9769b416-afcb-45a8-a297-e567b9e0476b"/>
+  </producedTypes>
+  <name>ИТСервисы_ДвижениеРесурсовСервисов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движение ресурсов по сервисам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="1454d4ec-ff85-4009-8674-cb6ab1f40a4c">
+    <name>ПроцентЗанятости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент занятости</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="edf9dfb8-2eca-487b-842b-dcc94de0b70c">
+    <name>ЧасовВМесяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часов в месяц</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="463bc6b1-f8b7-4a29-bee5-cfbc27633094">
+    <name>ИТСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИТ Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e6682750-9923-48c5-a7eb-bfe02fe0eeb3">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4eac8b14-a335-41eb-9f7e-8e719b73512a">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_РолиВПроектах</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

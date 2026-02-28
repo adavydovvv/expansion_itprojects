@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1c0e7d0-d76c-40df-9454-94ce8b173712">
+  <producedTypes>
+    <refType typeId="d68469de-6a39-49e1-90c2-c281553eda8b" valueTypeId="f33eecda-a287-4465-9d63-59fd6dc7ee7b"/>
+    <listType typeId="a4a765e6-5b36-4d45-9fac-7ebd39677ce4" valueTypeId="088fee07-56d8-4da7-9bc8-ac1ece08236e"/>
+    <managerType typeId="03ba0ca9-cb7d-453c-bf7a-66a3089f57d0" valueTypeId="8cc155b1-a338-4de2-8f0e-82116e8ab21e"/>
+  </producedTypes>
+  <name>ИТСервисы_СтатусыСервисов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы сервисов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c8982b5c-b4ab-46ff-8c51-4f5d61fd1305">
+    <name>Развитие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Развитие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1453e72c-3a9f-4448-b5b4-b70428e62048">
+    <name>Сопровождение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сопровождение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="404ff846-a9f9-4c5e-9ee9-88d95dbec5fe">
+    <name>Архив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Архив</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="abfb7257-d316-470c-a6b0-ee0271d31d03">
+    <name>НаСогласовании</name>
+    <synonym>
+      <key>ru</key>
+      <value>На согласовании</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

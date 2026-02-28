@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="264221e0-255b-47d8-9d53-00af823db1b9">
+  <producedTypes>
+    <objectType typeId="3d5ed874-7a1b-4880-bcc5-6fd1ca8d418f" valueTypeId="1d1a82d1-ad64-4394-ab20-3cc9e4879063"/>
+    <refType typeId="52c0aabc-beb5-400e-962a-50d6a8a8ef79" valueTypeId="fad1c925-d3a3-4b2d-83b1-505749f31cd0"/>
+    <selectionType typeId="252dc9ac-2761-48be-a81a-64538af708d8" valueTypeId="18b373ce-df46-47c5-9b44-92cff194714a"/>
+    <listType typeId="c19b3828-8b41-44aa-8be4-22c540b9a6a2" valueTypeId="ce0a6d8a-d8f5-438d-ba19-234ee049860a"/>
+    <managerType typeId="5f51440c-6ae7-47dc-8311-c275c7075983" valueTypeId="822f5c2a-bfa1-43df-966e-b05a8370e1c7"/>
+  </producedTypes>
+  <name>ИТСервисы_ТипыДокументацииСервисов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы документации сервисов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИТСервисы_ТипыДокументацииСервисов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ИТСервисы_ТипыДокументацииСервисов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="58624df1-b385-43b7-81d6-088071d55663">
+      <name>Архитектура</name>
+      <description>Архитектура</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="332c3d7f-0d47-4540-ab97-39271c765200">
+      <name>БазаЗнаний</name>
+      <description>База знаний</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="fea60183-0129-4416-9326-2ecb8068a85d">
+      <name>ПаспортИТСервиса</name>
+      <description>Паспорт ИТ-Сервиса</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="90fefcdc-de67-4d48-8d7e-73b0e604aeb4">
+      <name>ДорожнаяКарта</name>
+      <description>Дорожная карта развития</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="7ca45896-f14f-44a4-beae-f429b75014e4">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2c7ab8c8-a755-434c-a9e0-cd8f0010ea0c">
+    <name>ОбязательнаяДокументация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обязательная документация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9781f080-8c22-4308-959c-c5248b19d1b4">
+    <name>Порядок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="90830751-1996-498c-ae71-079565840630">
+    <name>Активна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активна</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

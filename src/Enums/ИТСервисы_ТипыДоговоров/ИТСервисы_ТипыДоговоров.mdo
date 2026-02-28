@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="748c744a-b3e4-46e3-9490-a990d05c2f67">
+  <producedTypes>
+    <refType typeId="9d2b8b45-3e40-4f4c-9fb3-51e711589422" valueTypeId="b58f9b78-d286-452e-9b7d-3d5ce4dd1666"/>
+    <listType typeId="09deed35-3ec9-41ac-ab69-dfb42a537e5e" valueTypeId="18fa0689-25a2-4d04-983c-77a1c1ff5e59"/>
+    <managerType typeId="598e26d9-f42a-488e-93df-efc177fec5b7" valueTypeId="4161f5f8-fe0b-44ba-852e-417fdce5e6d7"/>
+  </producedTypes>
+  <name>ИТСервисы_ТипыДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТСервисы типы договоров</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="edf2ab29-0086-416a-905e-de8bfa64cf51">
+    <name>ТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТП</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="43d734c5-366b-4958-a72f-8246f37b96cc">
+    <name>Подписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="30e6ed41-75a7-4463-83dd-7ebd69cd9188">
+    <name>Аренда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аренда</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9d39224f-25e9-4dec-9c3f-15eca7932a6b">
+    <name>Прочее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочее</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
