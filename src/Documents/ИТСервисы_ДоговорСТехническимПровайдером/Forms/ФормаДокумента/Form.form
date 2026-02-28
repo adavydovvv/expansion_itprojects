@@ -646,7 +646,7 @@
         <extInfo xsi:type="form:UsualGroupExtInfo">
           <group>Vertical</group>
           <behavior>Auto</behavior>
-          <representation>StrongSeparation</representation>
+          <representation>NormalSeparation</representation>
           <showLeftMargin>true</showLeftMargin>
           <united>true</united>
           <showTitle>auto</showTitle>
