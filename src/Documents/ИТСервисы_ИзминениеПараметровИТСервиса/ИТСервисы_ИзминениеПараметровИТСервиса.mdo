@@ -58,6 +58,22 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="40746ab6-0688-4892-bec8-5c42e1b82087">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="d66cb077-5f7c-4f35-b958-f4dff7ef63d5">
     <name>Сопровождение</name>
     <synonym>
@@ -100,22 +116,6 @@
       <stringQualifiers>
         <length>10</length>
       </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="04077ff0-ff20-444a-915d-c6ed7751cd67">
-    <name>Руководитель</name>
-    <synonym>
-      <key>ru</key>
-      <value>Руководитель</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Контрагенты</types>
-      <types>CatalogRef.Сотрудники</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
