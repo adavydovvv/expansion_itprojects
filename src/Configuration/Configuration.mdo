@@ -41,6 +41,7 @@
   <subsystems>Subsystem.ИТСервисы_ИТСервисы</subsystems>
   <commonPictures>CommonPicture.ИТСервисы</commonPictures>
   <roles>Role.ИТСервисы_Роль1</roles>
+  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <catalogs>Catalog.ИТСервисы_ИТСервисы</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <catalogs>Catalog.ИТСервисы_РолиВПроектах</catalogs>
