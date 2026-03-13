@@ -63,7 +63,7 @@
   <enums>Enum.ИТСервисы_Периоды</enums>
   <enums>Enum.ИТСервисы_ТипыПриказовПоСервисам</enums>
   <enums>Enum.ИТСервисы_СтатусыДокументов</enums>
-  <reports>Report.ИТСервисы_СводнаяТаблица</reports>
+  <reports>Report.ИТСервисы_СводныйОтчёт</reports>
   <informationRegisters>InformationRegister.ИТСервисы_ДокументацияСервисов</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_ПараметрыИТСервисов</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>
