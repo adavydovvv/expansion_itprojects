@@ -24,6 +24,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ИТСервисы_ДоговорСТехническимПровайдером.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ИТСервисы_ПараметрыИТСервисов</registerRecords>
   <registerRecords>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>

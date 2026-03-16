@@ -41,7 +41,6 @@
   <subsystems>Subsystem.ИТСервисы_ИТСервисы</subsystems>
   <commonPictures>CommonPicture.ИТСервисы</commonPictures>
   <roles>Role.ИТСервисы_Роль1</roles>
-  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <catalogs>Catalog.ИТСервисы_ИТСервисы</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <catalogs>Catalog.ИТСервисы_РолиВПроектах</catalogs>
@@ -64,6 +63,7 @@
   <enums>Enum.ИТСервисы_ТипыПриказовПоСервисам</enums>
   <enums>Enum.ИТСервисы_СтатусыДокументов</enums>
   <reports>Report.ИТСервисы_СводныйОтчёт</reports>
+  <reports>Report.ИТСервисы_СводныйОтчёт1</reports>
   <informationRegisters>InformationRegister.ИТСервисы_ДокументацияСервисов</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_ПараметрыИТСервисов</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>
