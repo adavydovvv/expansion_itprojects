@@ -53,6 +53,7 @@
   <documents>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</documents>
   <documents>Document.ИТСервисы_ПланТиражированияСервиса</documents>
   <documents>Document.ИТСервисы_ИзминениеПараметровИТСервиса</documents>
+  <documents>Document.ИТСервисы_ПриказОВводеВПЭ</documents>
   <enums>Enum.ИТСервисы_СтатусыСервисов</enums>
   <enums>Enum.ИТСервисы_СтатусыПрогноза</enums>
   <enums>Enum.ИТСервисы_СтатусыДокументации</enums>
@@ -62,8 +63,8 @@
   <enums>Enum.ИТСервисы_Периоды</enums>
   <enums>Enum.ИТСервисы_ТипыПриказовПоСервисам</enums>
   <enums>Enum.ИТСервисы_СтатусыДокументов</enums>
-  <reports>Report.ИТСервисы_СводныйОтчёт</reports>
-  <reports>Report.ИТСервисы_СводныйОтчёт1</reports>
+  <reports>Report.ИТСервисы_ХарактеристикиИТСервисов</reports>
+  <reports>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</reports>
   <informationRegisters>InformationRegister.ИТСервисы_ДокументацияСервисов</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_ПараметрыИТСервисов</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>

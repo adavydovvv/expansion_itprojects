@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d54ea56-e2fe-440f-bf3f-bb5a371c9434">
+  <producedTypes>
+    <objectType typeId="695e6cea-1b7d-4a25-8410-0ddbf9bee8fd" valueTypeId="acec5b6d-624a-4743-be4b-2ad1e7a6bebb"/>
+    <refType typeId="244bf90b-d7af-4260-b7f6-f98f5c720f48" valueTypeId="b366f585-775b-452c-823d-9e33cae6cc1a"/>
+    <selectionType typeId="6c30dddd-14d4-4f65-9236-89adb2597ea5" valueTypeId="879e9007-2d1e-4501-8259-b6776f499860"/>
+    <listType typeId="3c84cdb0-1240-4431-a14e-bd6efea8d89a" valueTypeId="aedcbfdd-87fd-4b5e-bf69-adebbf11b7f3"/>
+    <managerType typeId="5bde5089-fbf5-4564-8b82-1c374fec0134" valueTypeId="b848aaa1-0e86-4df7-b17a-50182ecfaf7a"/>
+  </producedTypes>
+  <name>ИТСервисы_ПриказОВводеВПЭ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказ о вводе в производственную эксплуатацию</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИТСервисы_ПриказОВводеВПЭ.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>50</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>InformationRegister.ИТСервисы_ПараметрыИТСервисов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b94d4126-b7a5-430f-806d-f6b93882fa65">
+    <name>ДатаПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата приказа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dc263f51-65af-4943-aafa-c83ab6ff7de0">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="fd94405d-f20d-4a63-b567-27fa9ae46c98">
+    <producedTypes>
+      <objectType typeId="885fb8f9-4065-4fc2-afeb-446f4ae114f0" valueTypeId="9031b464-cca2-446d-bca9-db5b179da225"/>
+      <rowType typeId="7d001c51-207f-4765-80c7-01417858d476" valueTypeId="da4ef7ce-580f-4302-81c3-30ced878a35a"/>
+    </producedTypes>
+    <name>ПриказыСервисы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказы сервисы</value>
+    </synonym>
+    <attributes uuid="9813adf9-9d0a-4c6e-bc83-25e3763188fa">
+      <name>ИТСервис</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИТСервис</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a6162b24-bbe0-4c26-a32d-e63c05d2ff55">
+      <name>ДатаВвода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата ввода</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

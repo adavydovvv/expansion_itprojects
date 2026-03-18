@@ -101,7 +101,7 @@
       <value>Приказ о вводе ВПЭ</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>DocumentRef.ИТСервисы_ПриказОВводеВПЭ</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

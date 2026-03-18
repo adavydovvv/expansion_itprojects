@@ -10,7 +10,8 @@
   <content>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</content>
   <content>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</content>
   <content>InformationRegister.ИТСервисы_ДокументацияСервисов</content>
-  <content>Report.ИТСервисы_СводныйОтчёт</content>
+  <content>Report.ИТСервисы_ХарактеристикиИТСервисов</content>
   <content>InformationRegister.ИТСервисы_ПараметрыИТСервисов</content>
+  <content>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</content>
   <parentSubsystem>Subsystem.ИТСервисы_ИТСервисы</parentSubsystem>
 </mdclass:Subsystem>
