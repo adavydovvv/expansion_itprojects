@@ -13,5 +13,6 @@
   <content>Document.ИТСервисы_ПланТиражированияСервиса</content>
   <content>Document.ИТСервисы_ИзминениеПараметровИТСервиса</content>
   <content>Document.ИТСервисы_ПриказОВводеВПЭ</content>
+  <content>Document.ИТСервисы_Задача</content>
   <parentSubsystem>Subsystem.ИТСервисы_ИТСервисы</parentSubsystem>
 </mdclass:Subsystem>

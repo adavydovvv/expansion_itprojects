@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef66ac60-a961-4e10-9f4e-e1fc2cabda49">
+  <producedTypes>
+    <selectionType typeId="41f8c7ab-57c8-4941-a8d6-42e5b7c34db1" valueTypeId="07a5ad73-102c-45a0-a559-028ab92c9fc1"/>
+    <listType typeId="37e0d95e-c229-4c0c-bbb8-30a91168ab26" valueTypeId="20876aa5-7bc8-4273-bdc0-52876587cd70"/>
+    <managerType typeId="ca76418c-e1b5-493e-a2db-6344c0156ed0" valueTypeId="7aefb255-71de-4ede-9a8b-6e2a90434578"/>
+    <recordSetType typeId="52203d2f-67f5-46f3-95e4-77b2e372feac" valueTypeId="7793b164-145e-4bbf-a02b-fd7bbbc47826"/>
+    <recordKeyType typeId="dc054831-e09e-41dd-94aa-16c2bba494d2" valueTypeId="fb6db58e-9f23-45f3-981f-aa158adb4532"/>
+    <recordType typeId="ae78185d-c0f4-4ed7-b024-563bbe961e4d" valueTypeId="add92a7d-7d54-4599-8c58-7418d2f36e00"/>
+  </producedTypes>
+  <name>ИТСервисы_НагрузкаСотрудникаПоЗадачам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нагрузка сотрудника по задачам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="70e21291-abad-45a9-bf59-2015b67b497b">
+    <name>ПланЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>План часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="474b53cc-ffa1-4507-a4ba-8fbafe9e572b">
+    <name>ФактЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факт часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="4a00a5c0-f333-4c52-9a95-a8436e4e2a15">
+    <name>ИТСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИТСервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8b135860-1b77-4af4-90a0-2070d18515cd">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

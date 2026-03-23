@@ -48,12 +48,15 @@
   <catalogs>Catalog.Организации</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.Должности</catalogs>
   <documents>Document.ИТСервисы_РесурсныйДоговор</documents>
   <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
   <documents>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</documents>
   <documents>Document.ИТСервисы_ПланТиражированияСервиса</documents>
   <documents>Document.ИТСервисы_ИзминениеПараметровИТСервиса</documents>
   <documents>Document.ИТСервисы_ПриказОВводеВПЭ</documents>
+  <documents>Document.КадровыйПереводСписком</documents>
+  <documents>Document.ИТСервисы_Задача</documents>
   <enums>Enum.ИТСервисы_СтатусыСервисов</enums>
   <enums>Enum.ИТСервисы_СтатусыПрогноза</enums>
   <enums>Enum.ИТСервисы_СтатусыДокументации</enums>
@@ -63,10 +66,15 @@
   <enums>Enum.ИТСервисы_Периоды</enums>
   <enums>Enum.ИТСервисы_ТипыПриказовПоСервисам</enums>
   <enums>Enum.ИТСервисы_СтатусыДокументов</enums>
+  <enums>Enum.ИТСервисы_СтатусыЗадач</enums>
+  <enums>Enum.ИТСервисы_ПриоритетыЗадач</enums>
   <reports>Report.ИТСервисы_ХарактеристикиИТСервисов</reports>
   <reports>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</reports>
   <informationRegisters>InformationRegister.ИТСервисы_ДокументацияСервисов</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_ПараметрыИТСервисов</informationRegisters>
+  <informationRegisters>InformationRegister.КадроваяИсторияСотрудников</informationRegisters>
+  <informationRegisters>InformationRegister.ИТСервисы_СостоянияЗадач</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</accumulationRegisters>
 </mdclass:Configuration>

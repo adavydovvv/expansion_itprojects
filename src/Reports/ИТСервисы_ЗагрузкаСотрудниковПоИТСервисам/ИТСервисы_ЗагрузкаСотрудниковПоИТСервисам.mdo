@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49de5224-63a7-4430-a185-7ede0a9ee487">
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28254649-5d3c-4862-8476-9075a95f2ac9">
   <producedTypes>
-    <objectType typeId="1fca73a3-8301-484f-8f93-1f86b48c6fe6" valueTypeId="2f455a7b-61e4-43d2-b32a-ae9f63032c8d"/>
-    <managerType typeId="531658dd-da35-4520-b1a3-1fe4bbbac84a" valueTypeId="a5f44373-2c10-4523-8617-4c42b21c324e"/>
+    <objectType typeId="0302b974-4fb1-4b97-a670-7bced59f430d" valueTypeId="92516f81-2ab4-4b6d-ad42-95c885a30540"/>
+    <managerType typeId="72bb0e0f-163c-4ab4-8dae-80a37422424b" valueTypeId="b541ecbc-48d9-4ae9-ae0a-3672f717283d"/>
   </producedTypes>
   <name>ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</name>
   <synonym>
@@ -11,7 +11,7 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
-  <templates uuid="faf625f9-2a74-4ee3-b0fb-98e6290bd158">
+  <templates uuid="02f0ad50-dc8b-4684-9eaf-df2b081ba55f">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>

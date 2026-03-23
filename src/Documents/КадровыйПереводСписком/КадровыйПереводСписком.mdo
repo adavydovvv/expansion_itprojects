@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="cb6d4a98-4541-449b-bdda-7ebb8c62d3d3" extendedConfigurationObject="828c9cae-7dc7-48a2-af26-a9ceeabd120c">
+  <producedTypes>
+    <objectType typeId="3bb88cec-b45e-4a85-8ebf-256e9d8de2a7" valueTypeId="f49a2f37-9d59-4bba-84ec-2a295ff9b128"/>
+    <refType typeId="1022dec9-96bc-49ce-8d3a-906a6adfc13e" valueTypeId="0da65d71-e4ea-4fa8-8c3b-283254e948b1"/>
+    <selectionType typeId="fc8bdda8-62a1-46bf-97d4-85e71fc1f2c7" valueTypeId="9c331935-f609-49e4-9c46-e09fa637f8d4"/>
+    <listType typeId="4bcc56e9-759f-485c-8fba-89295d09e2f7" valueTypeId="c336753c-b54d-44a5-8279-208070d2dd44"/>
+    <managerType typeId="207414c8-f7b5-44bd-9c32-bdfa11913014" valueTypeId="6309dc2e-963a-486d-b3a4-79515714496d"/>
+  </producedTypes>
+  <name>КадровыйПереводСписком</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <registerRecords>InformationRegister.КадроваяИсторияСотрудников</registerRecords>
+  <attributes uuid="f543e7c2-e6c2-456f-a5f5-900ee76a119a" extendedConfigurationObject="89f287e2-265b-47bb-aa6a-1d878590479e">
+    <name>ДатаСобытия</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </typeExtension>
+    </extension>
+  </attributes>
+</mdclass:Document>

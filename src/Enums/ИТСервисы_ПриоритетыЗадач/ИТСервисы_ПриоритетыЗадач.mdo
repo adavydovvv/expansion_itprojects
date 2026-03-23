@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6be5053-4905-490d-8dfe-476d94c8981b">
+  <producedTypes>
+    <refType typeId="3d4227a3-8c60-4493-95ba-68a902c01d24" valueTypeId="4692ac2f-30e8-41e3-92a1-9a2d51d99b66"/>
+    <listType typeId="9fffc441-e138-4e92-9d9a-b96d4366488c" valueTypeId="0134b103-4394-442c-98b9-45660bc5ca60"/>
+    <managerType typeId="ab7e4ecf-a626-4993-aaef-887de7b4ceac" valueTypeId="fbe94e40-ed9b-462d-9c47-244fbea760c0"/>
+  </producedTypes>
+  <name>ИТСервисы_ПриоритетыЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приоритеты задач</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="319cc4a1-a7f1-42c2-9f8b-c273726a3741">
+    <name>Низкий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Низкий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="edb50ee2-dd25-4178-a682-74e13b6bb387">
+    <name>Средний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7312a691-1af1-4138-a92e-6dda9dcae458">
+    <name>Высокий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Высокий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="484b5204-fa06-49bf-9d96-3c5763e1be2a">
+    <name>Критический</name>
+    <synonym>
+      <key>ru</key>
+      <value>Критический</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

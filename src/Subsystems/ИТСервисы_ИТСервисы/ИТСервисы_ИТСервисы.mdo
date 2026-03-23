@@ -19,6 +19,8 @@
   <content>Enum.ИТСервисы_ТипыДоговоров</content>
   <content>Enum.ИТСервисы_ТипыПриказовПоСервисам</content>
   <content>Enum.ИТСервисы_СтатусыДокументов</content>
+  <content>Enum.ИТСервисы_СтатусыЗадач</content>
+  <content>Enum.ИТСервисы_ПриоритетыЗадач</content>
   <subsystems>СправочникиПодсистема</subsystems>
   <subsystems>ДокументыПодсистема</subsystems>
   <subsystems>АналитикаПодсистема</subsystems>

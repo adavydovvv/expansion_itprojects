@@ -13,5 +13,7 @@
   <content>Report.ИТСервисы_ХарактеристикиИТСервисов</content>
   <content>InformationRegister.ИТСервисы_ПараметрыИТСервисов</content>
   <content>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</content>
+  <content>InformationRegister.ИТСервисы_СостоянияЗадач</content>
+  <content>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</content>
   <parentSubsystem>Subsystem.ИТСервисы_ИТСервисы</parentSubsystem>
 </mdclass:Subsystem>
