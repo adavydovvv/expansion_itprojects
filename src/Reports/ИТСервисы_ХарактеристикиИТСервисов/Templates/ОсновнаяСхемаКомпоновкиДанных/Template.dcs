@@ -20669,7 +20669,7 @@
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
-		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+		<dcsset:settings xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>НаРазвитии</dcsset:field>
@@ -21044,6 +21044,10 @@
 								<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>Текст</dcscor:parameter>
 								<dcscor:value xsi:type="v8:LocalStringType">
 									<v8:item>
@@ -21051,10 +21055,6 @@
 										<v8:content>Нет</v8:content>
 									</v8:item>
 								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
 							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
@@ -21085,6 +21085,10 @@
 								<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>Текст</dcscor:parameter>
 								<dcscor:value xsi:type="v8:LocalStringType">
 									<v8:item>
@@ -21092,10 +21096,6 @@
 										<v8:content>Нет</v8:content>
 									</v8:item>
 								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
 							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
@@ -21466,11 +21466,6 @@
 								<dcscor:parameter>Шрифт</dcscor:parameter>
 								<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:use>false</dcscor:use>
-								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
 					<dcsset:item>
@@ -21504,11 +21499,6 @@
 								<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
 								<dcscor:value xsi:type="xs:decimal">13</dcscor:value>
 							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:use>false</dcscor:use>
-								<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
-								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
 					<dcsset:item>
@@ -21538,6 +21528,10 @@
 								<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>Текст</dcscor:parameter>
 								<dcscor:value xsi:type="v8:LocalStringType">
 									<v8:item>
@@ -21545,10 +21539,6 @@
 										<v8:content>-</v8:content>
 									</v8:item>
 								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
 							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
@@ -21579,6 +21569,10 @@
 								<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>Текст</dcscor:parameter>
 								<dcscor:value xsi:type="v8:LocalStringType">
 									<v8:item>
@@ -21586,15 +21580,6 @@
 										<v8:content>-</v8:content>
 									</v8:item>
 								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:use>false</dcscor:use>
-								<dcscor:parameter>Размещение</dcscor:parameter>
-								<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Block</dcscor:value>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
 							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
@@ -21618,11 +21603,6 @@
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>Шрифт</dcscor:parameter>
 								<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:use>false</dcscor:use>
-								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-								<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
 							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>

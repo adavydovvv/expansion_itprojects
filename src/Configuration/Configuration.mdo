@@ -41,6 +41,9 @@
   <subsystems>Subsystem.ИТСервисы_ИТСервисы</subsystems>
   <commonPictures>CommonPicture.ИТСервисы</commonPictures>
   <roles>Role.ИТСервисы_Роль1</roles>
+  <commonModules>CommonModule.ИТСервисы_ИТСервисыИнтеграцияСервер</commonModules>
+  <commonModules>CommonModule.ИТСервисы_KaitenСинхронизацияСлужебный</commonModules>
+  <httpServices>HTTPService.KaitenIntegration</httpServices>
   <catalogs>Catalog.ИТСервисы_ИТСервисы</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <catalogs>Catalog.ИТСервисы_РолиВПроектах</catalogs>
@@ -74,6 +77,7 @@
   <informationRegisters>InformationRegister.ИТСервисы_ПараметрыИТСервисов</informationRegisters>
   <informationRegisters>InformationRegister.КадроваяИсторияСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_СостоянияЗадач</informationRegisters>
+  <informationRegisters>InformationRegister.ИТСервисы_НастройкиИнтеграцииKaiten</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</accumulationRegisters>

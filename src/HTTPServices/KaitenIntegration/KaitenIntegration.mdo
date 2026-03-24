@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3710ee4-29e6-46cd-bb56-8852054196a0">
+  <name>KaitenIntegration</name>
+  <synonym>
+    <key>ru</key>
+    <value>Kaiten integration</value>
+  </synonym>
+  <rootURL>kaiten</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="8e550468-f85e-402f-b8e9-35540db3e333">
+    <name>ИзменениеЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение задачи</value>
+    </synonym>
+    <template>/tasks/changed</template>
+    <methods uuid="1c888757-80d4-4674-842e-bcce6cf42bff">
+      <name>TasksChanged</name>
+      <synonym>
+        <key>ru</key>
+        <value>Tasks changed</value>
+      </synonym>
+      <handler>TasksChangedGet</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="8aa773c6-66d0-435d-9f7e-bf62d84ef343">
+    <name>Синхронизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронизация</value>
+    </synonym>
+    <template>/tasks/sync</template>
+    <methods uuid="71e8bf1c-d9ed-4767-affc-745f028cac83">
+      <name>TasksSync</name>
+      <synonym>
+        <key>ru</key>
+        <value>Tasks sync</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>TasksSyncPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f204a8e8-5fdb-49d0-9a65-7fc409f5dc45">
+    <name>ПолучениеИзKaiten</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение из kaiten</value>
+    </synonym>
+    <template>/tasks/from-kaiten</template>
+    <methods uuid="9e4eba4a-31b9-4558-9bef-aaff94ff31d2">
+      <name>TasksFromKaiten</name>
+      <synonym>
+        <key>ru</key>
+        <value>Tasks from kaiten</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>TasksFromKaitenPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="add19efe-7f17-4602-b6d4-12f38bb9c10d">
+    <name>ПолучениеНастроекСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение настроек сервиса</value>
+    </synonym>
+    <template>/settings/services</template>
+    <methods uuid="2259cb2b-e5d6-4081-9ade-bf95e88a834f">
+      <name>SettingsServicesGET</name>
+      <synonym>
+        <key>ru</key>
+        <value>Settings services GET</value>
+      </synonym>
+      <handler>SettingsServicesGET</handler>
+    </methods>
+    <methods uuid="e6cd8792-fff0-4707-a3e8-58a76fb418cb">
+      <name>SettingsServicesPOST</name>
+      <synonym>
+        <key>ru</key>
+        <value>Settings services POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>SettingsServicesPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

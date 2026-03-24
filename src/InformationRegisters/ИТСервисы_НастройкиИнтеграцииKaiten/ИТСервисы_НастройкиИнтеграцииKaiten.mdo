@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c9e07c0-8bf9-454c-b717-971a489fa26d">
+  <producedTypes>
+    <selectionType typeId="8c5ace52-de60-4ed4-88f9-2125cfb209cd" valueTypeId="09e0c306-11f8-4c3f-854b-6fdd568a2f29"/>
+    <listType typeId="070d0094-612e-44c6-a12c-250170964aaf" valueTypeId="c289b858-0e25-4a46-b371-3e0bd6d7e87f"/>
+    <managerType typeId="e64f287c-5915-4c6b-991a-535ab72bafa9" valueTypeId="778a89ff-85e9-4fd2-ba82-be0c04ec233a"/>
+    <recordSetType typeId="afc7c27e-595c-4597-87a3-33bb757d2bb5" valueTypeId="978f09e1-3a1f-46d5-8846-438ecc9ed9e5"/>
+    <recordKeyType typeId="dbf22c5b-9c42-4629-a063-04f6f3bd919e" valueTypeId="2e7720e3-d1ef-4608-a8b2-5706139fc0ba"/>
+    <recordType typeId="b206616c-25af-4474-b331-e26f25df163c" valueTypeId="ade19887-2eeb-4d2f-b42a-656574baf1b4"/>
+    <recordManagerType typeId="1db3352e-1280-41fb-920e-99e9131c1cc6" valueTypeId="d29ca639-1320-471c-b24e-b8adc47f9a4e"/>
+  </producedTypes>
+  <name>ИТСервисы_НастройкиИнтеграцииKaiten</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки интеграции Kaiten</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="40624fd8-3d43-4d84-9144-918adcafeee0">
+    <name>Активно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8f5bbed2-5321-43e7-8524-5b9ac9d746ac">
+    <name>KaitenBoardID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kaiten board ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8af0937b-c43e-4517-a240-a5188ec0de3f">
+    <name>KaitenLaneID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kaiten lane ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="41f87c1a-fe12-4132-9a3d-ff2528bd00c6">
+    <name>KaitenQueueColumnID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kaiten queue column ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8f331ff8-eeee-4fd2-8d60-2862d3cebc00">
+    <name>KaitenInProgressColumnID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kaiten in progress column ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1446611b-9462-4da9-8c52-c429c97513f0">
+    <name>KaitenReviewColumnID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kaiten review column ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3787436b-2752-4c8e-85eb-09c9aaa25fa5">
+    <name>KaitenDoneColumnID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kaiten done column ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d831ddda-385e-479e-94eb-d330752f2d2d">
+    <name>KaitenCanceledColumnID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kaiten canceled column ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="20d16a83-b85f-4f8b-8175-1cc5735168c8">
+    <name>PriorityPropertyID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Priority property ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="68b734d7-3765-4178-90ef-b43c28650bbe">
+    <name>PlanHoursPropertyID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Plan hours property ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="809f2fe2-2ee1-4455-906a-959de64d6fcf">
+    <name>FactHoursPropertyID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Fact hours property ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7ea27723-7b99-4a28-831c-78687496c02d">
+    <name>ServicePropertyID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Service property ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="85e99784-3fd2-4e57-8e5a-56d19f0d95ec">
+    <name>StartDatePropertyID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Start date property ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b6d3fc06-133b-4573-9802-b063e67ba4fa">
+    <name>EndDatePropertyID</name>
+    <synonym>
+      <key>ru</key>
+      <value>End date property ID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="346ed516-022a-4da9-a224-6fa5fe73bf91">
+    <name>ExternalSystemCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>External system code</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5b9a812b-5b5f-4861-afb7-2f063e9874bb">
+    <name>ИТСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИТСервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
