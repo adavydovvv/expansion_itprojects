@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7646fd30-ec2e-460e-a4a2-aa4200bfcae4">
+  <name>KaitenПодсистема</name>
+  <synonym>
+    <key>ru</key>
+    <value>Kaiten</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ИТСервисы_НастройкиИнтеграцииKaiten</content>
+  <content>DataProcessor.ИТСервисы_ЗаполнениеДанныхДляИнтеграции</content>
+  <parentSubsystem>Subsystem.ИТСервисы_ИТСервисы</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="665b2d20-fd9a-4c15-9352-51ebd471e128">
+  <producedTypes>
+    <managerType typeId="75831fb0-4bfe-4940-bda7-5825330dc102" valueTypeId="39eba051-3bba-48b1-92d8-a61d1878d0ce"/>
+    <valueManagerType typeId="04aa7573-d0ee-4eed-8e4c-03f6eefe1712" valueTypeId="b2a5c6ea-1967-4acc-84b3-e2ef0a85e133"/>
+    <valueKeyType typeId="cc05e7bf-e891-4f39-9461-c6f987a8e1c0" valueTypeId="1d8318fa-5e8c-4092-b0f4-a863b770faa0"/>
+  </producedTypes>
+  <name>ИТСервисы_PythonServiceUrl</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТСервисы python service url</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="542de3b6-2100-4b9b-82c3-4fd97946e174">
+  <name>ИТСервисы_ИнтеграцияKaitenСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция kaiten сервер</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

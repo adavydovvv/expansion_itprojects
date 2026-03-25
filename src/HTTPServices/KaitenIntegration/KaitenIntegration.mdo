@@ -83,4 +83,20 @@
       <handler>SettingsServicesPOST</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="41363947-b0b4-450f-aea9-8ea8082106d1">
+    <name>НастройкаСинхронизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка синхронизации</value>
+    </synonym>
+    <template>/settings/global</template>
+    <methods uuid="2ca2d0ac-b67e-4895-90b3-da49085bf415">
+      <name>GetSettingsGlobal</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get settings global</value>
+      </synonym>
+      <handler>НастройкаСинхронизацииGetSettingsGlobal</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>

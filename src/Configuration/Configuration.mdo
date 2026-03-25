@@ -43,7 +43,13 @@
   <roles>Role.ИТСервисы_Роль1</roles>
   <commonModules>CommonModule.ИТСервисы_ИТСервисыИнтеграцияСервер</commonModules>
   <commonModules>CommonModule.ИТСервисы_KaitenСинхронизацияСлужебный</commonModules>
+  <commonModules>CommonModule.ИТСервисы_ИнтеграцияKaitenСервер</commonModules>
   <httpServices>HTTPService.KaitenIntegration</httpServices>
+  <constants>Constant.ИТСервисы_KaitenBaseUrl</constants>
+  <constants>Constant.ИТСервисы_KaitenToken</constants>
+  <constants>Constant.ИТСервисы_PythonServiceUrl</constants>
+  <constants>Constant.ИТСервисы_KaitenIntegrationEnabled</constants>
+  <constants>Constant.ИТСервисы_KaitenSyncIntervalMinutes</constants>
   <catalogs>Catalog.ИТСервисы_ИТСервисы</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <catalogs>Catalog.ИТСервисы_РолиВПроектах</catalogs>
@@ -73,6 +79,7 @@
   <enums>Enum.ИТСервисы_ПриоритетыЗадач</enums>
   <reports>Report.ИТСервисы_ХарактеристикиИТСервисов</reports>
   <reports>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</reports>
+  <dataProcessors>DataProcessor.ИТСервисы_ЗаполнениеДанныхДляИнтеграции</dataProcessors>
   <informationRegisters>InformationRegister.ИТСервисы_ДокументацияСервисов</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_ПараметрыИТСервисов</informationRegisters>
   <informationRegisters>InformationRegister.КадроваяИсторияСотрудников</informationRegisters>

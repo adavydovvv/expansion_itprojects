@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b559ab5-dbd9-4dbf-85ab-752f6ce90321">
+  <producedTypes>
+    <managerType typeId="75d6a97b-36a7-4e5b-8c1b-7ad12ab12fa6" valueTypeId="04550ab8-994a-474e-a366-260a25cdf8c3"/>
+    <valueManagerType typeId="36e50a9b-7cb7-4eda-834e-439d9c9387fe" valueTypeId="75bdde4e-51a3-42e6-b2bf-6a61cdbd2aba"/>
+    <valueKeyType typeId="0c3d402a-4406-4383-bb91-fc9faecf3816" valueTypeId="fe7a71ab-5089-4278-adfe-12e23c7092ea"/>
+  </producedTypes>
+  <name>ИТСервисы_KaitenSyncIntervalMinutes</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТСервисы kaiten sync interval minutes</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

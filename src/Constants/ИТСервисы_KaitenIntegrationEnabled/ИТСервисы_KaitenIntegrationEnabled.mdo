@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4aaef17-0373-407c-9ef0-efdf540bd6d6">
+  <producedTypes>
+    <managerType typeId="e4e4144a-7cbf-4962-8d4a-defa9126be39" valueTypeId="e66593a4-2f49-4c06-b4e5-ae5fec7a579a"/>
+    <valueManagerType typeId="00841428-b8bb-42ca-b5f5-2008c1a74808" valueTypeId="79f79823-3675-484e-b7ea-ca4c52b83ba8"/>
+    <valueKeyType typeId="1dbda388-6c25-47ac-8a00-acbba8fc4b2f" valueTypeId="a555bc25-5675-477f-8ddb-23964777b27c"/>
+  </producedTypes>
+  <name>ИТСервисы_KaitenIntegrationEnabled</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТСервисы kaiten integration enabled</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

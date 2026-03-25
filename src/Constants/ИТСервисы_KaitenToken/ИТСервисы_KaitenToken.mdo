@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40d7883e-3aa6-4fc5-8b44-13f0d909bb61">
+  <producedTypes>
+    <managerType typeId="3de365eb-8823-4be0-ac1b-9e877367adbc" valueTypeId="f9960be3-3f81-4ac4-87d7-53c8b1aaf81b"/>
+    <valueManagerType typeId="6846910c-9b4f-4c44-8702-8fa606614af4" valueTypeId="776f5a7c-df80-4ca8-a415-8b0a75a61c39"/>
+    <valueKeyType typeId="ec355115-7f8f-4371-afae-2aa6cf33e15a" valueTypeId="204fdf08-ac3e-4011-a20f-44dce8b5ac97"/>
+  </producedTypes>
+  <name>ИТСервисы_KaitenToken</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТСервисы kaiten token</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
