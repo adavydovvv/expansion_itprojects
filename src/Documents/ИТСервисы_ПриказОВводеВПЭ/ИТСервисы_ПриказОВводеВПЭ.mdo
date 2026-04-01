@@ -10,7 +10,7 @@
   <name>ИТСервисы_ПриказОВводеВПЭ</name>
   <synonym>
     <key>ru</key>
-    <value>Приказ о вводе в производственную эксплуатацию</value>
+    <value>Приказ о вводе в промышленную эксплуатацию</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ИТСервисы_ПриказОВводеВПЭ.StandardAttribute.Number</inputByString>
@@ -22,6 +22,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИТСервисы_ПриказОВводеВПЭ.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>InformationRegister.ИТСервисы_ПараметрыИТСервисов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
@@ -61,6 +62,15 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="e3eec324-c776-4328-a43e-dc85217316a4">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="fd94405d-f20d-4a63-b567-27fa9ae46c98">
     <producedTypes>
       <objectType typeId="885fb8f9-4065-4fc2-afeb-446f4ae114f0" valueTypeId="9031b464-cca2-446d-bca9-db5b179da225"/>

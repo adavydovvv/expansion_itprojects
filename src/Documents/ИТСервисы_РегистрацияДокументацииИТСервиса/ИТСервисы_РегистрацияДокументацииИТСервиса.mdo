@@ -23,6 +23,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИТСервисы_РегистрацияДокументацииИТСервиса.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>InformationRegister.ИТСервисы_ПараметрыИТСервисов</registerRecords>
   <registerRecords>InformationRegister.ИТСервисы_ДокументацияСервисов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
@@ -87,6 +88,15 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="21a2aa44-2fb9-4ebc-89a1-0ffe48552001">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="184b4427-fe08-4508-b00f-81bf352232b9">
     <producedTypes>
       <objectType typeId="2d960d35-8c28-4743-823a-e926680fa0d4" valueTypeId="0cc9ee9c-b0b2-4097-a3dc-289c8163ab16"/>

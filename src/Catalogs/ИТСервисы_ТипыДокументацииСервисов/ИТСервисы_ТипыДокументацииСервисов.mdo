@@ -60,6 +60,7 @@
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ИТСервисы_ТипыДокументацииСервисов.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="7ca45896-f14f-44a4-beae-f429b75014e4">
     <name>Описание</name>
     <synonym>
@@ -128,4 +129,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="e23ecf0f-bb39-4723-ba39-0b18f2876197">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

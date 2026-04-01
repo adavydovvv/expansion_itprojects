@@ -40,7 +40,9 @@
   </languages>
   <subsystems>Subsystem.ИТСервисы_ИТСервисы</subsystems>
   <commonPictures>CommonPicture.ИТСервисы</commonPictures>
-  <roles>Role.ИТСервисы_Роль1</roles>
+  <roles>Role.ИТСервисы_ПолныеПраваИТСервисы</roles>
+  <roles>Role.ИТСервисы_РуководительИТСервиса</roles>
+  <roles>Role.ИТСервисы_РуководительПодразделения</roles>
   <commonModules>CommonModule.ИТСервисы_ИТСервисыИнтеграцияСервер</commonModules>
   <commonModules>CommonModule.ИТСервисы_KaitenСинхронизацияСлужебный</commonModules>
   <commonModules>CommonModule.ИТСервисы_ИнтеграцияKaitenСервер</commonModules>
