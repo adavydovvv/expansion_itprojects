@@ -42,7 +42,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ИТСервисы_РолиВПроектах</name>
+		<name>Catalog.ИТСервисы_РолиВКомандах</name>
 		<right>
 			<name>InteractiveDeletePredefinedData</name>
 			<value>false</value>

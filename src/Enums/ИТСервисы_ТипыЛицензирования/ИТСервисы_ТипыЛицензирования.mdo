@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86834ff9-958d-4f3f-979f-da3f153d27d0">
+  <producedTypes>
+    <refType typeId="93c7c9a2-b303-47a4-9fcf-2936f8f4da69" valueTypeId="3b72f953-9bb4-48cf-a8cc-d72b70c4075a"/>
+    <listType typeId="2eb2967c-a40d-4c8a-9154-3491c6c6b9b8" valueTypeId="55126b32-3c17-4a6c-90c0-2df7e79702ec"/>
+    <managerType typeId="2717d352-d292-47b0-afcc-db40350aa698" valueTypeId="96da96d8-0fbd-4c7e-ae57-1742e25c6943"/>
+  </producedTypes>
+  <name>ИТСервисы_ТипыЛицензирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы лицензирования</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f12a51b4-3052-417e-b38c-974bf915c820">
+    <name>Подписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0ab88c74-6a72-4d47-8422-b0c890713339">
+    <name>Бессрочная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бессрочная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c2059d15-de3c-43f2-97c8-842f9593e685">
+    <name>OpenSource</name>
+    <synonym>
+      <key>ru</key>
+      <value>Open-source</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

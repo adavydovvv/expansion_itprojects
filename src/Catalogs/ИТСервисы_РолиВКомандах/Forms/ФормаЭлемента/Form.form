@@ -221,7 +221,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>CatalogObject.ИТСервисы_РолиВПроектах</types>
+      <types>CatalogObject.ИТСервисы_РолиВКомандах</types>
     </valueType>
     <view>
       <common>true</common>

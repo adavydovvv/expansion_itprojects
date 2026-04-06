@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a799ec4b-f343-4828-adfd-e596399df10b">
+  <producedTypes>
+    <objectType typeId="cdb563d9-0558-4e94-a625-101868561dfd" valueTypeId="15713c4e-24db-49ac-a3c9-fe1b54eed8b4"/>
+    <refType typeId="72db29b6-d640-4140-a291-b0dc1bc90f49" valueTypeId="4966b8be-d618-4f8e-a3ce-5ef26e82a54b"/>
+    <selectionType typeId="9f0a9134-055f-4214-83fb-75c6e1f7fa12" valueTypeId="642e7e08-f292-45c5-89a9-350714f4c9a5"/>
+    <listType typeId="a23339e9-c24e-44ac-bcea-be24204f8b8f" valueTypeId="f0bcff29-74df-4152-8963-7e861a759f43"/>
+    <managerType typeId="4fe67ab5-1b59-48ea-a537-4f8be5a0a934" valueTypeId="7faab278-e10d-4626-a72d-19f0ace9d1b9"/>
+  </producedTypes>
+  <name>ИТСервисы_ЛицензииПО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лицензии ПО</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИТСервисы_ЛицензииПО.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ИТСервисы_ЛицензииПО.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="dd463f6b-40b8-4d03-b872-549fb7982770">
+    <name>ПрограммноеОбеспечение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Программное обеспечение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_ПрограммныеОбеспечения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1c97daf9-9345-4408-a3fb-2b6b41a25fcf">
+    <name>ТипЛицензирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип лицензирования</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ИТСервисы_ТипыЛицензирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="40f9f606-5199-4ac9-830e-75d98a498c44">
+    <name>КоличествоРабочихМест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество рабочих мест</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c57cd632-eaf4-4f25-b1e0-ffce293d6a5b">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ee15d859-0e9b-4795-a1b5-0daa4bb89ad1">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="963400b6-b7cd-4b5e-a189-c8a7ea8b7432">
+    <name>Вендор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вендор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="22d667a0-6692-49f2-86af-48b3019e8a20">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

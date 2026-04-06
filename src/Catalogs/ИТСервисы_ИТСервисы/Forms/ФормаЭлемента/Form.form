@@ -530,7 +530,7 @@
       </title>
       <id>5</id>
       <valueType>
-        <types>CatalogRef.ИТСервисы_РолиВПроектах</types>
+        <types>CatalogRef.ИТСервисы_РолиВКомандах</types>
       </valueType>
       <view>
         <common>true</common>

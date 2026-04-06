@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50142c10-5361-43f1-afd0-272b84598fa5">
+  <producedTypes>
+    <refType typeId="b2f9bd85-8f6c-46db-a1b8-91849e3c140f" valueTypeId="5e50a336-7f24-442f-a58e-2b0da5c8aad0"/>
+    <listType typeId="0e03163a-e415-4783-b307-b0c538138ca9" valueTypeId="ff7c7015-189d-4730-ad5a-13a2f28c20d6"/>
+    <managerType typeId="5b7e996a-85ee-47e8-9801-c95069f57a19" valueTypeId="c6d201cf-26af-44cd-81e2-20af5186813e"/>
+  </producedTypes>
+  <name>ИТСервисы_СтатусыЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы лицензий</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="12394283-9c90-4f58-84c3-3dde6e5b01a7">
+    <name>Просрочена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просрочена</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="905b4a12-a7b5-4932-a507-2dd56a8b17db">
+    <name>ТребуетПродления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требует продления</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d1125efa-d1ae-43bf-863b-4835827bcdf6">
+    <name>Активна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активна</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

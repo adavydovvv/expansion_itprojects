@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc85b95e-cff0-4f61-aef0-e548a1453d29">
+  <producedTypes>
+    <selectionType typeId="f3f939cf-5cb2-4da2-b5c7-6b0c32733ec9" valueTypeId="dbad6f83-e650-4985-a428-cb8574385f73"/>
+    <listType typeId="208aae0c-1cdb-44bd-94f6-6e7c1999627e" valueTypeId="456205f2-29da-458e-9554-aaa371a028d3"/>
+    <managerType typeId="d76e56b7-b363-4905-a4bd-ed8e80a94289" valueTypeId="b87ba8f5-900a-40f2-bcb2-bc6564c4cdc6"/>
+    <recordSetType typeId="30f7672f-a8fb-46a1-b463-c75e93f0e7d0" valueTypeId="b0818275-2e2f-445e-96e4-1f2438397e95"/>
+    <recordKeyType typeId="78d3e4a1-1304-49b4-ad78-f2b6a2a37288" valueTypeId="7af754a4-80db-447f-be1a-f2b16c27c86f"/>
+    <recordType typeId="93f4a1eb-f1db-49a0-9327-6f258afed79f" valueTypeId="82d6f742-f4da-40c2-acfd-13603279524a"/>
+    <recordManagerType typeId="496d6184-6a6d-4a44-85de-691d6f6b05bc" valueTypeId="7390f1a6-dcc2-47c2-b42f-2e74937ca31b"/>
+  </producedTypes>
+  <name>ИТСервисы_СостоянияЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния лицензий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ad02b145-4331-410f-8570-0158ed1826e5">
+    <name>ДнейДоОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней до окончания</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="69fc5d73-72cf-499f-985a-af366f9f3548">
+    <name>Лицензия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лицензия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_ЛицензииПО</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

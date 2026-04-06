@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c389c877-108b-4698-ab83-5a6b2e977c9a">
+  <producedTypes>
+    <objectType typeId="5fd5d735-eb8c-4632-a876-13071a38d2ae" valueTypeId="98829b22-7bf4-4ae5-a1ff-74fc24b2dcec"/>
+    <refType typeId="818237b3-1260-494b-80b5-5ae9791b4b4a" valueTypeId="60f5ccbc-2565-4750-a389-2449acdbc6f5"/>
+    <selectionType typeId="1bb4628b-e9c4-47d3-9500-5c876c64f497" valueTypeId="0e6bbe14-3b3e-4ce4-b77e-fd25a080ea5c"/>
+    <listType typeId="1b4a6e42-f68d-4fc8-bc4b-8eaf3de5d055" valueTypeId="ebbcc52c-cf01-4685-8bdf-de6d6d96cb95"/>
+    <managerType typeId="3826243e-aa5b-454f-b944-fafb8780282e" valueTypeId="270d01f4-3068-46d5-9e3f-5981a2674b54"/>
+  </producedTypes>
+  <name>ИТСервисы_РолиВКомандах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли в командах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИТСервисы_РолиВКомандах.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ИТСервисы_РолиВКомандах.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ИТСервисы_РолиВКомандах.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="371fdad9-d1ce-4c5c-b062-a98b325972ef">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b3437ddb-827d-4cd4-bd1b-a91c866c9421">
+    <name>СредняяЗанятость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нормативная загрузка (%)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>50</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b254e2fb-5b91-46f0-943b-5a3666e24d2b">
+    <name>Активна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активна</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6095d033-7f84-4d55-99a0-7a4e14870f88">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -135,7 +135,7 @@
         <value>Роль</value>
       </synonym>
       <type>
-        <types>CatalogRef.ИТСервисы_РолиВПроектах</types>
+        <types>CatalogRef.ИТСервисы_РолиВКомандах</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

@@ -46,7 +46,9 @@
   <commonModules>CommonModule.ИТСервисы_ИТСервисыИнтеграцияСервер</commonModules>
   <commonModules>CommonModule.ИТСервисы_KaitenСинхронизацияСлужебный</commonModules>
   <commonModules>CommonModule.ИТСервисы_ИнтеграцияKaitenСервер</commonModules>
+  <commonModules>CommonModule.ИТСервисы_ОбновлениеЛицензийСервер</commonModules>
   <httpServices>HTTPService.KaitenIntegration</httpServices>
+  <scheduledJobs>ScheduledJob.ИТСервисы_ОбновлениеЛицензий</scheduledJobs>
   <constants>Constant.ИТСервисы_KaitenBaseUrl</constants>
   <constants>Constant.ИТСервисы_KaitenToken</constants>
   <constants>Constant.ИТСервисы_PythonServiceUrl</constants>
@@ -54,16 +56,19 @@
   <constants>Constant.ИТСервисы_KaitenSyncIntervalMinutes</constants>
   <catalogs>Catalog.ИТСервисы_ИТСервисы</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
-  <catalogs>Catalog.ИТСервисы_РолиВПроектах</catalogs>
+  <catalogs>Catalog.ИТСервисы_РолиВКомандах</catalogs>
   <catalogs>Catalog.ИТСервисы_ТипыДокументацииСервисов</catalogs>
   <catalogs>Catalog.Организации</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.Должности</catalogs>
+  <catalogs>Catalog.ИТСервисы_ПрограммныеОбеспечения</catalogs>
+  <catalogs>Catalog.ИТСервисы_ТипыПО</catalogs>
+  <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
+  <catalogs>Catalog.ИТСервисы_ЛицензииПО</catalogs>
   <documents>Document.ИТСервисы_РесурсныйДоговор</documents>
   <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
   <documents>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</documents>
-  <documents>Document.ИТСервисы_ПланТиражированияСервиса</documents>
   <documents>Document.ИТСервисы_ИзминениеПараметровИТСервиса</documents>
   <documents>Document.ИТСервисы_ПриказОВводеВПЭ</documents>
   <documents>Document.КадровыйПереводСписком</documents>
@@ -79,6 +84,8 @@
   <enums>Enum.ИТСервисы_СтатусыДокументов</enums>
   <enums>Enum.ИТСервисы_СтатусыЗадач</enums>
   <enums>Enum.ИТСервисы_ПриоритетыЗадач</enums>
+  <enums>Enum.ИТСервисы_ТипыЛицензирования</enums>
+  <enums>Enum.ИТСервисы_СтатусыЛицензий</enums>
   <reports>Report.ИТСервисы_ХарактеристикиИТСервисов</reports>
   <reports>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</reports>
   <dataProcessors>DataProcessor.ИТСервисы_ЗаполнениеДанныхДляИнтеграции</dataProcessors>
@@ -87,6 +94,7 @@
   <informationRegisters>InformationRegister.КадроваяИсторияСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_СостоянияЗадач</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_НастройкиИнтеграцииKaiten</informationRegisters>
+  <informationRegisters>InformationRegister.ИТСервисы_СостоянияЛицензий</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</accumulationRegisters>
