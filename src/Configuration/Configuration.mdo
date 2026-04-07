@@ -9,6 +9,7 @@
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <defaultRunMode>Checked</defaultRunMode>
     <usePurposes>Checked</usePurposes>
+    <managedApplicationModule>Extended</managedApplicationModule>
     <homePageWorkArea>Extended</homePageWorkArea>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
@@ -47,6 +48,8 @@
   <commonModules>CommonModule.ИТСервисы_KaitenСинхронизацияСлужебный</commonModules>
   <commonModules>CommonModule.ИТСервисы_ИнтеграцияKaitenСервер</commonModules>
   <commonModules>CommonModule.ИТСервисы_ОбновлениеЛицензийСервер</commonModules>
+  <commonModules>CommonModule.ИТСервисы_ОповещенияКлиентСервер</commonModules>
+  <commonModules>CommonModule.ИТСервисы_ВызовСервера</commonModules>
   <httpServices>HTTPService.KaitenIntegration</httpServices>
   <scheduledJobs>ScheduledJob.ИТСервисы_ОбновлениеЛицензий</scheduledJobs>
   <constants>Constant.ИТСервисы_KaitenBaseUrl</constants>
@@ -66,10 +69,10 @@
   <catalogs>Catalog.ИТСервисы_ТипыПО</catalogs>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
   <catalogs>Catalog.ИТСервисы_ЛицензииПО</catalogs>
+  <catalogs>Catalog.ИТСервисы_Проекты</catalogs>
   <documents>Document.ИТСервисы_РесурсныйДоговор</documents>
   <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
   <documents>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</documents>
-  <documents>Document.ИТСервисы_ИзминениеПараметровИТСервиса</documents>
   <documents>Document.ИТСервисы_ПриказОВводеВПЭ</documents>
   <documents>Document.КадровыйПереводСписком</documents>
   <documents>Document.ИТСервисы_Задача</documents>
@@ -86,10 +89,10 @@
   <enums>Enum.ИТСервисы_ПриоритетыЗадач</enums>
   <enums>Enum.ИТСервисы_ТипыЛицензирования</enums>
   <enums>Enum.ИТСервисы_СтатусыЛицензий</enums>
+  <enums>Enum.ИТСервисы_СтатусыПроектов</enums>
   <reports>Report.ИТСервисы_ХарактеристикиИТСервисов</reports>
   <reports>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</reports>
   <dataProcessors>DataProcessor.ИТСервисы_ЗаполнениеДанныхДляИнтеграции</dataProcessors>
-  <informationRegisters>InformationRegister.ИТСервисы_ДокументацияСервисов</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_ПараметрыИТСервисов</informationRegisters>
   <informationRegisters>InformationRegister.КадроваяИсторияСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_СостоянияЗадач</informationRegisters>

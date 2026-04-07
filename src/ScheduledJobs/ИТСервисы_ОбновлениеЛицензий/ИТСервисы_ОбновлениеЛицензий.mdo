@@ -6,7 +6,9 @@
     <value>Обновление дней до окончания лицензий</value>
   </synonym>
   <methodName>CommonModule.ИТСервисы_ОбновлениеЛицензийСервер.ОбновитьДниДоОкончанияЛицензий</methodName>
+  <description>Обновление дней до окончания лицензий</description>
   <use>true</use>
+  <predefined>true</predefined>
   <restartCountOnFailure>3</restartCountOnFailure>
   <restartIntervalOnFailure>10</restartIntervalOnFailure>
 </mdclass:ScheduledJob>

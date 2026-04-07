@@ -96,19 +96,4 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="00fafdc8-2124-43d5-9889-d2e6df909f17">
-    <name>Лицензия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Лицензия</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ИТСервисы_ЛицензииПО</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
 </mdclass:Catalog>

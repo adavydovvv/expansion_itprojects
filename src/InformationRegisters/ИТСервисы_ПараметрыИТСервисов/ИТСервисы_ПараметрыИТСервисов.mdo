@@ -19,81 +19,6 @@
   <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
   <writeMode>RecorderSubordinate</writeMode>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="ad0c7473-b994-443a-827c-5abd0920ef1d">
-    <name>НаРазвитии</name>
-    <synonym>
-      <key>ru</key>
-      <value>На развитии</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="23e83cf2-4ba2-426a-a50b-dd298876a454">
-    <name>НаСопровождении</name>
-    <synonym>
-      <key>ru</key>
-      <value>На сопровождении</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="f2ff0613-a614-4912-8907-6656bf6b46d2">
-    <name>ПланПроектаВИСУП</name>
-    <synonym>
-      <key>ru</key>
-      <value>План проекта ВИСУП</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="0bb2f59d-4a04-42b6-b730-393f87b80e58">
-    <name>КодВАРМРазработчика</name>
-    <synonym>
-      <key>ru</key>
-      <value>Код ВАРМРазработчика</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:BooleanValue"/>
-  </resources>
-  <resources uuid="918d7554-f946-4d3e-a73b-37f2c67d1b36">
-    <name>ДорожнаяКарта</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дорожная карта</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="efbe96fd-6f73-4722-8c1b-212d5b9d05b1">
     <name>ПриказОВводеВПЭ</name>
     <synonym>
@@ -170,15 +95,14 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="c38429c3-b63c-4220-bef3-1ad958f2ff46">
-    <name>Руководитель</name>
+  <resources uuid="b988728c-800e-4c2b-902c-072527f5e541">
+    <name>ДорожнаяКарта</name>
     <synonym>
       <key>ru</key>
-      <value>Руководитель</value>
+      <value>Дорожная карта</value>
     </synonym>
     <type>
-      <types>CatalogRef.Контрагенты</types>
-      <types>CatalogRef.Сотрудники</types>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

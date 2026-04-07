@@ -152,21 +152,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="2a5d107e-095e-475b-8fac-2ebf9bb3393f">
-    <name>Контрагент</name>
-    <synonym>
-      <key>ru</key>
-      <value>Контрагент</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Контрагенты</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="33648a1a-90e8-4daa-b07f-5ab8289d5471">
     <name>ДатаЗапуска</name>
     <synonym>
@@ -253,61 +238,82 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <tabularSections uuid="90b9546f-a0cd-4d7a-bfd2-144eb20fa108">
-    <producedTypes>
-      <objectType typeId="3b89e211-4142-4cab-81c1-371b30245cd4" valueTypeId="fbca2388-e9a7-4fc7-8eb9-82dba667aaae"/>
-      <rowType typeId="3b21fed8-aabe-4189-ac42-7ec61f9acc9b" valueTypeId="ff3b741f-05d9-4a70-885c-06a3668bfe53"/>
-    </producedTypes>
-    <name>ЗаинтересованныеЛица</name>
+  <attributes uuid="dc5dbed4-b953-421f-a88b-7ce819b655aa">
+    <name>Развитие</name>
     <synonym>
       <key>ru</key>
-      <value>Заинтересованные лица</value>
+      <value>Развитие</value>
     </synonym>
-    <attributes uuid="836b5d14-3b7a-4e4d-8a65-8364f4e6da79">
-      <name>Сотрудник</name>
-      <synonym>
-        <key>ru</key>
-        <value>Сотрудник</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.Сотрудники</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="f58baff7-a1eb-486c-b29d-595cde1f92cf">
-      <name>Роль</name>
-      <synonym>
-        <key>ru</key>
-        <value>Роль</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ИТСервисы_РолиВКомандах</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="677e9977-7ef4-46ac-abb2-851bd6917d6b">
-      <name>Примечание</name>
-      <synonym>
-        <key>ru</key>
-        <value>Примечание</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers/>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <lineNumberLength>9</lineNumberLength>
-  </tabularSections>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="93ba2b50-b368-4429-b152-63276aefbd10">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f9fc5ec8-1191-4797-8ed3-7e4283c9e96c">
+    <name>Сопровождение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сопровождение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="640d31e0-a976-4511-8e44-062724196852">
+    <name>ПланПроектаВИСУП</name>
+    <synonym>
+      <key>ru</key>
+      <value>План проекта ВИСУП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="075a63a2-a62b-45fa-9b1e-36c99f1b7261">
+    <name>КодВАРМРазработчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код в АРМ разработчика</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="c5602464-e81d-44d4-ae09-505f2ca46919">
     <name>ФормаЭлемента</name>
     <synonym>

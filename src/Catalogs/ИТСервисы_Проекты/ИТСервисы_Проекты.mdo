@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97eca0ff-9af3-4ae3-9586-625576e23ca7">
+  <producedTypes>
+    <objectType typeId="ee960ed4-abf5-4c07-9539-286611db8e9a" valueTypeId="d51e8962-4f23-4469-97f4-8f449ad62558"/>
+    <refType typeId="0628bb8f-9c56-4624-b5ff-bc3a49779210" valueTypeId="22b5b84b-5c40-4021-ac13-5885dddd4fb0"/>
+    <selectionType typeId="4d8c2977-697c-4115-9a25-b95ff16b1b8c" valueTypeId="233e73fd-1328-4e77-869c-4f810ed715c9"/>
+    <listType typeId="28f6d2a0-74f5-4b53-a1e3-4f4158920d1e" valueTypeId="84dac4a0-41c7-4637-8c44-f0697701ee15"/>
+    <managerType typeId="9a43a992-e710-44d0-9718-b92fd7ee1879" valueTypeId="5c914bee-35e3-47b2-acb3-fc33d160c6a9"/>
+  </producedTypes>
+  <name>ИТСервисы_Проекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТ-Проекты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИТСервисы_Проекты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ИТСервисы_Проекты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="3951397e-6348-40f1-9245-4a4438188c6e">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

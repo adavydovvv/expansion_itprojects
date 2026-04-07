@@ -25,7 +25,6 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ИТСервисы_РегистрацияДокументацииИТСервиса.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>InformationRegister.ИТСервисы_ПараметрыИТСервисов</registerRecords>
-  <registerRecords>InformationRegister.ИТСервисы_ДокументацияСервисов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="9ef04945-eaa2-4ca1-8596-bae8b9c7a0ed">
