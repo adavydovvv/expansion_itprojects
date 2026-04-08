@@ -18,6 +18,10 @@
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>ИТ-Проект</value>
+  </objectPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>
@@ -29,6 +33,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ИТСервисы_Проекты.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="3951397e-6348-40f1-9245-4a4438188c6e">
     <name>Руководитель</name>
     <synonym>
@@ -44,4 +49,289 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="22eeff87-cd91-44df-b3bc-0d74088584bf">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2149db84-8656-4d0a-9139-4eb050acafc3">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6d382ef1-65fe-417a-bd71-6ca6e24a1b7b">
+    <name>ПлановаяДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da782135-b925-433b-b61c-d79df856bce6">
+    <name>ПлановаяДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dd409f25-16f5-479e-b24d-f9fc2ac94919">
+    <name>ПространствоKaiten</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пространство kaiten</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="beef4940-dd3d-48e0-9e32-12e5db44ac12">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ИТСервисы_СтатусыПроектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8454ac85-5c6a-41c0-a8ee-390eae24ee13">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="125a8edd-fed2-4dbb-b41c-1ba61fd82dc4">
+    <name>ИТСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИТ-Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="4ffeafcc-c0a3-4f4d-8a41-d840e3923eb6">
+    <producedTypes>
+      <objectType typeId="1c1aa77a-6834-4c94-a330-354cdb68a7a4" valueTypeId="0417e066-fcea-45f5-a2d5-7ac2b14e54c2"/>
+      <rowType typeId="68f92ee5-3e53-4c01-89d6-ce3d777890d2" valueTypeId="23db769d-5309-4b5d-b9a0-741c3e133b06"/>
+    </producedTypes>
+    <name>ПартнерыИКонтактныеЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнеры и контактные лица</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Partners and contact persons</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Список партнеров и контактных лиц, необходимый при оперативной работе. В комментариях указывается текущий контекст. Примеры:
+- СМУ 123, ,субподрядчик;
+- Major Cargo, Иванов, ответственный за доставку.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>List of partners and contact persons. The current context is specified in comments. Examples:
+- Building and construction business unit 123, ,subcontractor;
+- Major Cargo, Smith, responsible for delivery.</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="bfcd5d0b-e05b-4920-998d-c4abd77cde90">
+      <name>Партнер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Партнер</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Partner</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Партнеры</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Поставщик, субподрядчик и т.д., причастный к проекту.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vendor, subcontractor, etc. related to the project.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="74e4baa7-226a-4e61-8b15-aac30b5d3961">
+      <name>РольПартнера</name>
+      <synonym>
+        <key>ru</key>
+        <value>Роль партнера</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Partner's role</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.РолиПартнеровВСделкахИПроектах</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Используется для определения роли участника проекта.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>It is used to determine the project participant's role.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6af06149-0dda-47ec-9c43-7f2a7e022e1d">
+      <name>КонтактноеЛицо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контактное лицо</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Contact person</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.КонтактныеЛицаПартнеров</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Человек, причастный к проекту.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Employee participating in the project.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b0d2258f-e1ef-4a2d-afb7-eb23577d3743">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Comment</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Описание причины причастности к проекту.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Describe the reason for engagement in the project. </value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="02abce13-da14-4ccd-9740-7d31129c7825">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

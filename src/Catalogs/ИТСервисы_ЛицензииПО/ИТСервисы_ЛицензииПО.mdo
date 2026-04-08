@@ -29,6 +29,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ИТСервисы_ЛицензииПО.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="dd463f6b-40b8-4d03-b872-549fb7982770">
     <name>ПрограммноеОбеспечение</name>
     <synonym>
@@ -143,4 +144,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="4021b81e-76c3-4c17-9397-c8bdd2f48708">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

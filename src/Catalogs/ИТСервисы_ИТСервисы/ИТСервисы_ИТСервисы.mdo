@@ -92,6 +92,10 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>ИТ-Сервис</value>
+  </objectPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>
@@ -314,6 +318,58 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <tabularSections uuid="c79edde6-7e65-4601-b3a8-5094c008de3c">
+    <producedTypes>
+      <objectType typeId="4f50762c-050c-4552-955f-f01b379d8fd4" valueTypeId="ccab7ef0-965d-4875-a30d-5f0e19b5a9fc"/>
+      <rowType typeId="799061d5-53e5-407b-ae9c-ed2652719a90" valueTypeId="1af31dd9-437e-4a9a-888e-48fdb9e7b984"/>
+    </producedTypes>
+    <name>Организации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организации</value>
+    </synonym>
+    <attributes uuid="598f0bc6-69f8-463f-94bb-1fd34de791a7">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <tabularSections uuid="7fa5bef4-fb1f-488a-8671-56e311de8b01">
+    <producedTypes>
+      <objectType typeId="d96d50ec-85dd-4596-9822-d6c193d9621b" valueTypeId="8b88ac32-29ba-4bec-b93a-bc9a26123a31"/>
+      <rowType typeId="25428007-c10e-4f73-852b-d835f0536628" valueTypeId="eacaec96-f79c-49b1-a5d4-f4c31a55d04f"/>
+    </producedTypes>
+    <name>ПрограммныеОбеспечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Программные обеспечения</value>
+    </synonym>
+    <attributes uuid="1d2f3b0e-1753-4f92-8499-99c08280c7eb">
+      <name>ПрограммноеОбеспечение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Программное обеспечение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИТСервисы_ПрограммныеОбеспечения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
   <forms uuid="c5602464-e81d-44d4-ae09-505f2ca46919">
     <name>ФормаЭлемента</name>
     <synonym>

@@ -70,6 +70,9 @@
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
   <catalogs>Catalog.ИТСервисы_ЛицензииПО</catalogs>
   <catalogs>Catalog.ИТСервисы_Проекты</catalogs>
+  <catalogs>Catalog.Партнеры</catalogs>
+  <catalogs>Catalog.РолиПартнеровВСделкахИПроектах</catalogs>
+  <catalogs>Catalog.КонтактныеЛицаПартнеров</catalogs>
   <documents>Document.ИТСервисы_РесурсныйДоговор</documents>
   <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
   <documents>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</documents>

@@ -29,6 +29,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ИТСервисы_ТипыПО.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="3d14a5f7-7e59-4873-949e-86a863a7c0bc">
     <name>Описание</name>
     <synonym>
@@ -46,4 +47,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="48fba185-237b-44f5-8bd1-e95357435ef4">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

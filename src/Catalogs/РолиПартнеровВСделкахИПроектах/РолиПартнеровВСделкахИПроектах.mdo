@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="844f9fd1-90de-497b-a24e-e999ab56beb0" extendedConfigurationObject="9056d2ef-6366-44fd-807c-846b121a816a">
+  <producedTypes>
+    <objectType typeId="021cb3e3-39ae-481b-afc8-4c0af1fa9b3d" valueTypeId="0887ab21-0a9b-4311-aa55-b2144eac5bd2"/>
+    <refType typeId="9d989a22-0e6d-413f-8450-257d3c4a61d0" valueTypeId="5d679d63-edf2-4366-b49a-6f5393259ac4"/>
+    <selectionType typeId="a2b3ad20-dff7-4d5d-a991-09b274dc2a84" valueTypeId="40a41b01-6a1f-4ac1-90f9-70729e700582"/>
+    <listType typeId="db83f610-801b-4868-b579-6b789fa98836" valueTypeId="a775b276-3f02-43ed-983d-204eed8451f9"/>
+    <managerType typeId="b586186a-4fa5-41f8-a5b6-7fd634db6dc7" valueTypeId="f0cba3dc-73e6-45b3-bd34-1001ce54ec34"/>
+  </producedTypes>
+  <name>РолиПартнеровВСделкахИПроектах</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Catalog>
