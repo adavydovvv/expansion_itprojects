@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4716d30-1b58-4284-9c58-71cc3ffd1c10">
+  <producedTypes>
+    <selectionType typeId="9e953b6b-9253-4947-a8c2-ba9c6575911f" valueTypeId="9cf76cde-99b3-4dae-94b1-90d1400e5662"/>
+    <listType typeId="ea39d168-60d0-434b-b43c-31bc6b021c36" valueTypeId="df7bf636-a7d6-4fa9-b2a7-ff3d9aef2646"/>
+    <managerType typeId="6ca11aa7-7e03-4767-94c2-5a051c5458b7" valueTypeId="6f942cce-5a71-4627-af84-0e4a8f7c2bd0"/>
+  </producedTypes>
+  <name>ИТСервисы_Приказы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ИТСервисы_ПриказОВводеВПЭ</registeredDocuments>
+</mdclass:DocumentJournal>

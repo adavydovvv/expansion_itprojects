@@ -73,12 +73,17 @@
   <catalogs>Catalog.Партнеры</catalogs>
   <catalogs>Catalog.РолиПартнеровВСделкахИПроектах</catalogs>
   <catalogs>Catalog.КонтактныеЛицаПартнеров</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
   <documents>Document.ИТСервисы_РесурсныйДоговор</documents>
   <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
   <documents>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</documents>
   <documents>Document.ИТСервисы_ПриказОВводеВПЭ</documents>
   <documents>Document.КадровыйПереводСписком</documents>
   <documents>Document.ИТСервисы_Задача</documents>
+  <documents>Document.ИТСервисы_УстановкаКвалификацииСотрудников</documents>
+  <documents>Document.ИТСервисы_ФормированиеКомандыПроекта</documents>
+  <documentJournals>DocumentJournal.ИТСервисы_Приказы</documentJournals>
+  <documentJournals>DocumentJournal.ИТСервисы_Договоры</documentJournals>
   <enums>Enum.ИТСервисы_СтатусыСервисов</enums>
   <enums>Enum.ИТСервисы_СтатусыПрогноза</enums>
   <enums>Enum.ИТСервисы_СтатусыДокументации</enums>
@@ -101,6 +106,8 @@
   <informationRegisters>InformationRegister.ИТСервисы_СостоянияЗадач</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_НастройкиИнтеграцииKaiten</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_СостоянияЛицензий</informationRegisters>
+  <informationRegisters>InformationRegister.ИТСервисы_КвалификацияСотрудников</informationRegisters>
+  <informationRegisters>InformationRegister.ИТСервисы_КомандыПроектов</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</accumulationRegisters>

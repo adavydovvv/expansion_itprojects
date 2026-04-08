@@ -43,21 +43,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="e0f1a6c8-2324-4791-8995-25070920ab0c">
-    <name>ИТСервис</name>
-    <synonym>
-      <key>ru</key>
-      <value>ИТСервис</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="a2f329e7-d271-414e-9841-b0ba51f252f3">
     <name>ТехПровайдер</name>
     <synonym>
@@ -143,44 +128,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="366e5f8e-f927-4204-a6db-f908376e6a1e">
-    <name>НомерДоговораУТП</name>
-    <synonym>
-      <key>ru</key>
-      <value>Номер договора УТП</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="102a3c67-108d-4184-acd7-ddcaf4334420">
-    <name>ДатаДоговораУТП</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата договора УТП</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="1d1626d2-c9e9-47b6-8f2b-926d708fe2a6">
     <name>СтатусДоговора</name>
     <synonym>
@@ -206,6 +153,7 @@
       <types>String</types>
       <stringQualifiers/>
     </type>
+    <multiLine>true</multiLine>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:StringValue">
@@ -255,25 +203,7 @@
         <value>Услуга</value>
       </synonym>
       <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>100</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="00e2eb41-868e-4627-95bb-0858dbff5094">
-      <name>Описание</name>
-      <synonym>
-        <key>ru</key>
-        <value>Описание</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers/>
+        <types>CatalogRef.Номенклатура</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

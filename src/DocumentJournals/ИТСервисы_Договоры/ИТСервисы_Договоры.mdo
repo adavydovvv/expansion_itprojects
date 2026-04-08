@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa99df47-151f-4838-898e-64274631bbfa">
+  <producedTypes>
+    <selectionType typeId="befa1682-b73d-41a2-91f8-cbbbee958bdc" valueTypeId="067b3098-00e1-4fae-81bc-1c3caa608b41"/>
+    <listType typeId="4a2befdd-6396-4d64-bc47-27a8269e351a" valueTypeId="1bf9aac2-7ccf-4bdb-b342-0589c80750fc"/>
+    <managerType typeId="d6e12b21-ea4f-4bc5-a1e1-057bd826c2fd" valueTypeId="a1c3ceac-e905-4192-823a-02d7e43b2242"/>
+  </producedTypes>
+  <name>ИТСервисы_Договоры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договоры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ИТСервисы_РесурсныйДоговор</registeredDocuments>
+  <registeredDocuments>Document.ИТСервисы_ДоговорСТехническимПровайдером</registeredDocuments>
+</mdclass:DocumentJournal>

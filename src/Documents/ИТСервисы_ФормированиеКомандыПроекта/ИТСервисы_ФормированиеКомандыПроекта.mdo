@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a506ac86-5465-4133-b996-56b41654aeeb">
+  <producedTypes>
+    <objectType typeId="1f345376-3602-45d5-9981-823211467ca7" valueTypeId="05474053-b08b-4afe-b26c-95bb0f23320d"/>
+    <refType typeId="5684ce3a-34f5-43a2-93b0-a3ae2dee674b" valueTypeId="7bfdf46b-b4c4-48ac-9a32-ea8ee19f93d4"/>
+    <selectionType typeId="3c46640c-19c2-4d94-919c-47d189485174" valueTypeId="f189d718-f5f1-43ce-a648-a963f56855c2"/>
+    <listType typeId="f562d974-1a63-4336-a370-160752c22414" valueTypeId="52015858-7e8f-4d37-bdc3-8c5022c7a6d2"/>
+    <managerType typeId="4e77feff-e2f3-40fb-b741-29d6e6475027" valueTypeId="0cf17c95-de0c-433c-ab8a-80f61988f682"/>
+  </producedTypes>
+  <name>ИТСервисы_ФормированиеКомандыПроекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование команды проекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИТСервисы_ФормированиеКомандыПроекта.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИТСервисы_ФормированиеКомандыПроекта.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ИТСервисы_КомандыПроектов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="fce0086b-ea18-4093-bf6a-13ded49a0984">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6a3f31c3-7d14-4c00-9913-d74ffe301f3a">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ac7688b-7f4b-4a98-a555-51a065f63d3b">
+    <name>ФормаПодбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="0fe6636d-ff9e-4a7b-8431-7c3742db98a6">
+    <producedTypes>
+      <objectType typeId="085c5d1b-bc5d-424d-9b7d-6d4e2c6c6649" valueTypeId="c496091a-d371-40b4-8dfb-26b3556a4fee"/>
+      <rowType typeId="972dae41-b21a-48e1-a085-649b3878cecc" valueTypeId="f226065c-00ac-46bb-a120-b1751a76144b"/>
+    </producedTypes>
+    <name>Участники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участники</value>
+    </synonym>
+    <attributes uuid="12986d82-e222-4bfb-9c16-0c7da893c15d">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f6b4a097-ccba-4f64-a19c-2ebf5206015e">
+      <name>РольВКоманде</name>
+      <synonym>
+        <key>ru</key>
+        <value>Роль в команде</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИТСервисы_РолиВКомандах</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2addf875-6baf-440e-a660-80c4b20366a4">
+      <name>ВыделяемыйПроцент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выделяемый процент</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

@@ -127,13 +127,13 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="21db2fb1-8e12-4bc5-b32b-00106f60845c">
-    <name>ТехПровайдер</name>
+    <name>ДоговорСТП</name>
     <synonym>
       <key>ru</key>
-      <value>Тех провайдер</value>
+      <value>Договор с техническим провайдером</value>
     </synonym>
     <type>
-      <types>CatalogRef.Контрагенты</types>
+      <types>DocumentRef.ИТСервисы_ДоговорСТехническимПровайдером</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -169,11 +169,11 @@
           <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
         </items>
         <items xsi:type="form:FormField">
-          <name>ТехПровайдер</name>
+          <name>ДоговорСТП</name>
           <id>123</id>
           <title>
             <key>ru</key>
-            <value>Технический провайдер</value>
+            <value>Договор с техническим провайдером</value>
           </title>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -181,10 +181,10 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ТехПровайдер</segments>
+            <segments>Объект.ДоговорСТП</segments>
           </dataPath>
           <extendedTooltip>
-            <name>ТехПровайдерРасширеннаяПодсказка</name>
+            <name>ДоговорСТПРасширеннаяПодсказка</name>
             <id>125</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
@@ -194,7 +194,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ТехПровайдерКонтекстноеМеню</name>
+            <name>ДоговорСТПКонтекстноеМеню</name>
             <id>124</id>
             <autoFill>true</autoFill>
           </contextMenu>

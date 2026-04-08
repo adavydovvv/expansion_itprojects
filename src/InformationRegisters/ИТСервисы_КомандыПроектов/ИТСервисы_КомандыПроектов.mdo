@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07fbc706-39c1-45bd-a700-03a87fc4560a">
+  <producedTypes>
+    <selectionType typeId="8d7de111-116c-4a56-97f5-bbfc73760df5" valueTypeId="173d9700-26dc-4d48-bca2-a831cbd5d2fa"/>
+    <listType typeId="52a4ffbb-33fd-4495-b70f-e0e46ca6cd65" valueTypeId="11cf5cdc-ec50-4ae0-a047-0dc6fb799993"/>
+    <managerType typeId="3e3f3e25-aa96-4c7c-bd2d-fb43b198fda9" valueTypeId="c522a415-3fae-4448-baf5-2e05b26b3eef"/>
+    <recordSetType typeId="18ccb3f4-cf7a-4b55-94fc-990a3a59b91c" valueTypeId="97864f7e-d802-4f99-bd14-03d4e250c9bd"/>
+    <recordKeyType typeId="1274940a-6983-47da-b952-3b8df631f125" valueTypeId="58eb6157-9417-4958-82b0-7a9aca3272a0"/>
+    <recordType typeId="7d59ddad-415e-475e-8528-1913d2866ee5" valueTypeId="e94da55f-026c-4858-ad3a-d276dfffc1c9"/>
+    <recordManagerType typeId="34ac3ffa-322e-40fc-8e82-e65f26b1aa10" valueTypeId="558bd0d2-c1a5-40cf-b4fd-7b3562966cc4"/>
+  </producedTypes>
+  <name>ИТСервисы_КомандыПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Команды проектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="74bc019c-8a54-4c07-bef3-3a3eaefecdcc">
+    <name>РольВКоманде</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль в команде</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_РолиВКомандах</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="841356ce-c79d-45f1-8be7-aa35b8a0e5db">
+    <name>ПроцентЗагрузкиНаПроекте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент загрузки на проекте</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="eeaeb434-f43c-4512-a8bc-2b35345db31b">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d195d866-ddf5-43b0-98d2-65ff006826b2">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
