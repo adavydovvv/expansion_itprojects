@@ -74,6 +74,7 @@
   <catalogs>Catalog.РолиПартнеровВСделкахИПроектах</catalogs>
   <catalogs>Catalog.КонтактныеЛицаПартнеров</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.ИТСервисы_Компетенции</catalogs>
   <documents>Document.ИТСервисы_РесурсныйДоговор</documents>
   <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
   <documents>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</documents>
@@ -98,6 +99,7 @@
   <enums>Enum.ИТСервисы_ТипыЛицензирования</enums>
   <enums>Enum.ИТСервисы_СтатусыЛицензий</enums>
   <enums>Enum.ИТСервисы_СтатусыПроектов</enums>
+  <enums>Enum.ИТСервисы_Грейды</enums>
   <reports>Report.ИТСервисы_ХарактеристикиИТСервисов</reports>
   <reports>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</reports>
   <dataProcessors>DataProcessor.ИТСервисы_ЗаполнениеДанныхДляИнтеграции</dataProcessors>
@@ -108,6 +110,7 @@
   <informationRegisters>InformationRegister.ИТСервисы_СостоянияЛицензий</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_КвалификацияСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_КомандыПроектов</informationRegisters>
+  <informationRegisters>InformationRegister.ИТСервисы_КомпетенцииСотрудников</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</accumulationRegisters>

@@ -16,5 +16,6 @@
   <content>Catalog.ИТСервисы_ТипыПО</content>
   <content>Catalog.ИТСервисы_ЛицензииПО</content>
   <content>Catalog.ИТСервисы_Проекты</content>
+  <content>Catalog.ИТСервисы_Компетенции</content>
   <parentSubsystem>Subsystem.ИТСервисы_ИТСервисы</parentSubsystem>
 </mdclass:Subsystem>

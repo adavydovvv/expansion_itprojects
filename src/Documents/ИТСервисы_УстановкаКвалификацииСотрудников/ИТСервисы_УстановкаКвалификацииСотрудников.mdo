@@ -24,6 +24,7 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ИТСервисы_УстановкаКвалификацииСотрудников.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>InformationRegister.ИТСервисы_КвалификацияСотрудников</registerRecords>
+  <registerRecords>InformationRegister.ИТСервисы_КомпетенцииСотрудников</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="279acdf5-cd6f-41ca-9324-d472f9a2079b">
@@ -107,10 +108,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="cadf11d2-eef7-4899-acd9-52a533844c4a">
-      <name>МаксПроцентЗагрузки</name>
+      <name>НормаЧасовВМесяц</name>
       <synonym>
         <key>ru</key>
-        <value>Максимальный процент загрузки</value>
+        <value>Норма часов в месяц</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -118,6 +119,60 @@
           <precision>5</precision>
           <scale>2</scale>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e192a718-c55a-44cf-a733-2415d165d17d">
+      <name>Грейд</name>
+      <synonym>
+        <key>ru</key>
+        <value>Грейд</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ИТСервисы_Грейды</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <tabularSections uuid="08434b4c-3d8e-4cfd-b362-c8ba841863ea">
+    <producedTypes>
+      <objectType typeId="6a0f0f57-c00b-4a01-aa1b-e0bbeb9ed7f4" valueTypeId="3258a712-5d67-41bc-9c84-ed6e946f9adf"/>
+      <rowType typeId="e02fbb3a-31c9-4b95-ae80-2bfd25462f78" valueTypeId="5e5929a6-8568-4658-8b38-615ca9d80d74"/>
+    </producedTypes>
+    <name>КомпетенцииСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компетенции сотрудников</value>
+    </synonym>
+    <attributes uuid="935dd64a-3b16-403c-b628-ccf6a19e818b">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8f00b417-7cbf-4c78-8239-15d241ba9e6d">
+      <name>Компетенция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Компетенция</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИТСервисы_Компетенции</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

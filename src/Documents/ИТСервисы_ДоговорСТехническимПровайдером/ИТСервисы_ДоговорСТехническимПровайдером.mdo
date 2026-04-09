@@ -24,6 +24,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ИТСервисы_ДоговорСТехническимПровайдером.Form.ФормаДокумента</defaultObjectForm>
+  <defaultChoiceForm>Document.ИТСервисы_ДоговорСТехническимПровайдером.Form.ФормаВыбора</defaultChoiceForm>
   <registerRecords>InformationRegister.ИТСервисы_ПараметрыИТСервисов</registerRecords>
   <registerRecords>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
@@ -182,6 +183,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6ef5f497-49bc-467b-bf20-04fd107a6f94">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

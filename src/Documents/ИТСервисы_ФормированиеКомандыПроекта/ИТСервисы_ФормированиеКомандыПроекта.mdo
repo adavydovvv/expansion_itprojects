@@ -98,10 +98,28 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="2addf875-6baf-440e-a660-80c4b20366a4">
-      <name>ВыделяемыйПроцент</name>
+      <name>ВыделяемыеЧасы</name>
       <synonym>
         <key>ru</key>
-        <value>Выделяемый процент</value>
+        <value>Выделяемые часы</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f94bf1a8-83cc-4619-91fd-d543bb222e18">
+      <name>РассчитанныйПроцент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Процент загрузки</value>
       </synonym>
       <type>
         <types>Number</types>

@@ -56,10 +56,10 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="57dc0a38-1d90-4ccc-bd1e-5b790c3b32ee">
-    <name>МаксПроцентЗагрузки</name>
+    <name>НормаЧасовВМесяц</name>
     <synonym>
       <key>ru</key>
-      <value>Макс процент загрузки</value>
+      <value>Норма часов в месяц</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -67,6 +67,21 @@
         <precision>5</precision>
         <scale>2</scale>
       </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c7e0134d-0230-43e4-ae5b-47ff5d84dad2">
+    <name>Грейд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грейд</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ИТСервисы_Грейды</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="250185b4-5cd6-4e5e-940e-ab4403432ec7">
+  <producedTypes>
+    <objectType typeId="82da592d-534d-40e9-8043-bc62a95082fd" valueTypeId="e17b4f56-cd55-403d-8207-bafb488ad7ff"/>
+    <refType typeId="7c384826-65af-437e-ad05-ad4f1506fbd6" valueTypeId="2d1c286b-5262-497f-b104-dd2ad04dd3cc"/>
+    <selectionType typeId="176256c1-72bc-4bba-8454-073916ea7f55" valueTypeId="660fcd08-92c8-490c-a591-225854d5f966"/>
+    <listType typeId="cb6bd971-33f2-429b-b67e-8d3aa3742442" valueTypeId="7bd7b064-b020-420e-ba1e-269d67006cf3"/>
+    <managerType typeId="f6b06ce0-352a-42bc-934a-a94249d4bd73" valueTypeId="d35db03d-1c10-4786-917f-6053d14d0e5f"/>
+  </producedTypes>
+  <name>ИТСервисы_Компетенции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Компетенции</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИТСервисы_Компетенции.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ИТСервисы_Компетенции.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ИТСервисы_Компетенции.Form.ФормаЭлемента</defaultObjectForm>
+  <forms uuid="19952149-6553-45c0-b27e-3bf534f39f98">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="603f7bc4-a51a-44d8-ac0e-698b357bad12">
+  <producedTypes>
+    <selectionType typeId="99892e63-18c6-4003-a005-be76f5ae7b4f" valueTypeId="fba85db4-f54a-48d5-9bcb-ae27450046e9"/>
+    <listType typeId="1dadcca7-5f9d-471e-9a74-4c7442db3351" valueTypeId="e366dea3-95d3-492a-aaed-13041f1a9196"/>
+    <managerType typeId="07be86ec-671f-4409-ab37-464783a160a8" valueTypeId="b2667695-fbe3-448b-b408-7f7ed72dc59e"/>
+    <recordSetType typeId="1269cb1d-d2a9-4ccf-8c2a-86147a50a959" valueTypeId="542f77e1-6447-49e1-b2c9-d3926c649876"/>
+    <recordKeyType typeId="84752799-defe-451b-ba04-bf20499e6bed" valueTypeId="f0ce804e-a26e-4e8d-a465-c2d4ac57c402"/>
+    <recordType typeId="e6833769-68a3-4ae7-af57-30f5a6438910" valueTypeId="9dcd0a8d-e2b1-4ff0-9ba1-4a00860f2179"/>
+    <recordManagerType typeId="731dde78-b18c-49fc-b6b3-e1afb5ec5a71" valueTypeId="19944c18-ef29-43cf-b681-deb4b0514899"/>
+  </producedTypes>
+  <name>ИТСервисы_КомпетенцииСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Компетенции сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="2ddb55c0-5c6b-404b-8bf3-44f6b51e77f7">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9aa1fb5d-935a-4c5d-9350-ef2c8edc7063">
+    <name>Компетенция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компетенция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_Компетенции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

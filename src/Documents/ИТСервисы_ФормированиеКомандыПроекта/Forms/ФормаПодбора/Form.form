@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:schema="http://g5.1c.ru/v8/dt/data-composition-system/schema">
+  <title>
+    <key>ru</key>
+    <value>Подбор сотрудников в проект</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>СтрогийОтбор</name>
+    <id>29</id>
+    <title>
+      <key>ru</key>
+      <value>Показывать только подходящих под требования проекта сотрудников</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>СтрогийОтбор</segments>
+    </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>СтрогийОтборПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>СтрогийОтборРасширеннаяПодсказка</name>
+      <id>31</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СтрогийОтборКонтекстноеМеню</name>
+      <id>30</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
   <items xsi:type="form:Table">
     <name>СписокСвободных</name>
     <id>1</id>
@@ -85,19 +130,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>СвободноПроцентов</name>
-      <id>20</id>
+      <name>Грейд</name>
+      <id>26</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>СписокСвободных.СвободноПроцентов</segments>
+        <segments>СписокСвободных.Грейд</segments>
       </dataPath>
       <extendedTooltip>
-        <name>СвободноПроцентовРасширеннаяПодсказка</name>
-        <id>22</id>
+        <name>ГрейдРасширеннаяПодсказка</name>
+        <id>28</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -106,8 +151,44 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>СвободноПроцентовКонтекстноеМеню</name>
-        <id>21</id>
+        <name>ГрейдКонтекстноеМеню</name>
+        <id>27</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Auto</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СвободноЧасов</name>
+      <id>32</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокСвободных.СвободноЧасов</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СвободноЧасовРасширеннаяПодсказка</name>
+        <id>34</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СвободноЧасовКонтекстноеМеню</name>
+        <id>33</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
@@ -222,6 +303,7 @@
     <autoMaxWidth>true</autoMaxWidth>
     <autoMaxHeight>true</autoMaxHeight>
     <autoMaxRowsCount>true</autoMaxRowsCount>
+    <multipleChoice>true</multipleChoice>
     <selectionMode>MultiRow</selectionMode>
     <rowSelectionMode>Auto</rowSelectionMode>
     <header>true</header>
@@ -252,6 +334,32 @@
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>ФормаВыбратьОтмеченных</name>
+      <id>35</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаВыбратьОтмеченныхРасширеннаяПодсказка</name>
+        <id>36</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ВыбратьОтмеченных</commandName>
+      <buttonImportance>Normal</buttonImportance>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
@@ -289,12 +397,13 @@
       <queryText>ВЫБРАТЬ
 	Квалификация.Сотрудник КАК Сотрудник,
 	Квалификация.Роль КАК Роль,
-	Квалификация.МаксПроцентЗагрузки - ЕСТЬNULL(Занятость.УжеЗанят, 0) КАК СвободноПроцентов
+	Квалификация.Грейд КАК Грейд,
+	Квалификация.НормаЧасовВМесяц - ЕСТЬNULL(Занятость.УжеЗанятЧасов, 0) КАК СвободноЧасов
 ИЗ
 	РегистрСведений.ИТСервисы_КвалификацияСотрудников.СрезПоследних(&amp;ТекущаяДата, ) КАК Квалификация
 		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
 			Команды.Сотрудник КАК Сотрудник,
-			СУММА(Команды.ПроцентЗагрузкиНаПроекте) КАК УжеЗанят
+			СУММА(Команды.ЧасовНаПроекте) КАК УжеЗанятЧасов
 		ИЗ
 			РегистрСведений.ИТСервисы_КомандыПроектов.СрезПоследних(&amp;ТекущаяДата, ) КАК Команды
 		ГДЕ
@@ -303,7 +412,7 @@
 			Команды.Сотрудник) КАК Занятость
 		ПО Квалификация.Сотрудник = Занятость.Сотрудник
 ГДЕ
-	Квалификация.МаксПроцентЗагрузки - ЕСТЬNULL(Занятость.УжеЗанят, 0) > 0</queryText>
+	Квалификация.НормаЧасовВМесяц - ЕСТЬNULL(Занятость.УжеЗанятЧасов, 0) > 0</queryText>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
@@ -317,24 +426,36 @@
         <field>Роль</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>СвободноПроцентов</dataPath>
-        <field>СвободноПроцентов</field>
+        <dataPath>Проект</dataPath>
+        <field>Проект</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Грейд</dataPath>
+        <field>Грейд</field>
         <title>
           <localValue>
             <content>
               <key>ru</key>
-              <value>Свободно процентов</value>
+              <value>Грейд</value>
             </content>
           </localValue>
         </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>УжеЗанят</dataPath>
-        <field>УжеЗанят</field>
+        <dataPath>СвободноЧасов</dataPath>
+        <field>СвободноЧасов</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Свободно часов</value>
+            </content>
+          </localValue>
+        </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Проект</dataPath>
-        <field>Проект</field>
+        <dataPath>УжеЗанятЧасов</dataPath>
+        <field>УжеЗанятЧасов</field>
       </fields>
       <parameters>
         <name>Период</name>
@@ -369,6 +490,73 @@
       </parameters>
     </extInfo>
   </attributes>
+  <attributes>
+    <name>СтрогийОтбор</name>
+    <title>
+      <key>ru</key>
+      <value>Строгий отбор</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Проект</name>
+    <title>
+      <key>ru</key>
+      <value>Проект</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>CatalogRef.ИТСервисы_Проекты</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>МассивИсключений</name>
+    <title>
+      <key>ru</key>
+      <value>Массив исключений</value>
+    </title>
+    <id>6</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>ВыбратьОтмеченных</name>
+    <title>
+      <key>ru</key>
+      <value>Выбрать отмеченных</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВыбратьОтмеченных</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+    <selectedRowsUse>Auto</selectedRowsUse>
+  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>

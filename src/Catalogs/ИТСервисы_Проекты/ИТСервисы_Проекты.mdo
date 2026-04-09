@@ -325,6 +325,77 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <tabularSections uuid="6d98cecd-e1a9-4287-bde6-b0a9bb539a14">
+    <producedTypes>
+      <objectType typeId="9e6c3768-4d91-44f4-a35f-ab36394c27b2" valueTypeId="d5c1391e-5aae-447b-b761-ee4c5045ff41"/>
+      <rowType typeId="4014cff3-2d06-4b99-82f3-289a25637595" valueTypeId="7ac16653-db46-449e-a66e-07f21bca9972"/>
+    </producedTypes>
+    <name>ТребованияККоманде</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требования к команде</value>
+    </synonym>
+    <attributes uuid="5845d1cc-aae0-4a3e-8ac8-0c134d3c40fe">
+      <name>Роль</name>
+      <synonym>
+        <key>ru</key>
+        <value>Роль</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИТСервисы_РолиВКомандах</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="37a0e0d7-a526-4c69-bb11-f0be74997680">
+      <name>ТребуемыйГрейд</name>
+      <synonym>
+        <key>ru</key>
+        <value>Требуемый грейд</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ИТСервисы_Грейды</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="37902bed-d2a7-428b-85fa-b12073981dd3">
+      <name>ОбязательнаяКомпетенция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обязательная компетенция</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИТСервисы_Компетенции</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="55a18e74-6269-478a-a518-d42f9bca609f">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
   <forms uuid="02abce13-da14-4ccd-9740-7d31129c7825">
     <name>ФормаЭлемента</name>
     <synonym>

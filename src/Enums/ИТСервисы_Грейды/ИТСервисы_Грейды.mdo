@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef260d4b-b19f-4afa-915c-cb039b55217a">
+  <producedTypes>
+    <refType typeId="7b260db0-2dbc-43d9-ab13-d26b706732c8" valueTypeId="0e842135-2cd5-4905-bc9f-d0159763d77b"/>
+    <listType typeId="fd5ae4dd-129a-45ee-a4b4-a45a3f4ea85e" valueTypeId="4d6132d9-3ff2-41c1-b9a5-76d48926d562"/>
+    <managerType typeId="28992a83-903a-4ec9-830e-7f28ced7ef06" valueTypeId="a8f52dbc-6ecf-4c92-9951-7157cd8b0393"/>
+  </producedTypes>
+  <name>ИТСервисы_Грейды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Грейды</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="adfd4cca-0c6d-45ab-bdb4-0364723de0b9">
+    <name>Junior</name>
+    <synonym>
+      <key>ru</key>
+      <value>Junior</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1c7be06c-762b-4d83-84d4-a59485029af0">
+    <name>Middle</name>
+    <synonym>
+      <key>ru</key>
+      <value>Middle</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c6337578-9070-4575-951e-ed581278837e">
+    <name>Senior</name>
+    <synonym>
+      <key>ru</key>
+      <value>Senior</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5ec698de-8ac8-4972-99bb-2894ed111522">
+    <name>Lead</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lead</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

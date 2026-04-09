@@ -37,10 +37,10 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="841356ce-c79d-45f1-8be7-aa35b8a0e5db">
-    <name>ПроцентЗагрузкиНаПроекте</name>
+    <name>ЧасовНаПроекте</name>
     <synonym>
       <key>ru</key>
-      <value>Процент загрузки на проекте</value>
+      <value>Часов на проекте</value>
     </synonym>
     <type>
       <types>Number</types>
