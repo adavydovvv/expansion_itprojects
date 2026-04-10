@@ -60,7 +60,7 @@
   <catalogs>Catalog.ИТСервисы_ИТСервисы</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <catalogs>Catalog.ИТСервисы_РолиВКомандах</catalogs>
-  <catalogs>Catalog.ИТСервисы_ТипыДокументацииСервисов</catalogs>
+  <catalogs>Catalog.ИТСервисы_ТипыДокументации</catalogs>
   <catalogs>Catalog.Организации</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
@@ -75,9 +75,11 @@
   <catalogs>Catalog.КонтактныеЛицаПартнеров</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.ИТСервисы_Компетенции</catalogs>
+  <catalogs>Catalog.ИТСервисы_ФайлыДокументации</catalogs>
+  <catalogs>Catalog.Файлы</catalogs>
   <documents>Document.ИТСервисы_РесурсныйДоговор</documents>
   <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
-  <documents>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</documents>
+  <documents>Document.ИТСервисы_РегистрацияДокументации</documents>
   <documents>Document.ИТСервисы_ПриказОВводеВПЭ</documents>
   <documents>Document.КадровыйПереводСписком</documents>
   <documents>Document.ИТСервисы_Задача</documents>

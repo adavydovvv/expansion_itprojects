@@ -11,7 +11,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ИТСервисы_ТипыДокументацииСервисов</name>
+		<name>Catalog.ИТСервисы_ТипыДокументации</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -265,7 +265,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ИТСервисы_РегистрацияДокументацииИТСервиса</name>
+		<name>Document.ИТСервисы_РегистрацияДокументации</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

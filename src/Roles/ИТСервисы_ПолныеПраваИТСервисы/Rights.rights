@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Catalog.ИТСервисы_ТипыДокументацииСервисов</name>
+		<name>Catalog.ИТСервисы_ТипыДокументации</name>
 		<right>
 			<name>InteractiveDeletePredefinedData</name>
 			<value>false</value>
