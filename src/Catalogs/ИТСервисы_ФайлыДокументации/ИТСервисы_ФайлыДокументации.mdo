@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d9ed8dd-cdd7-4c72-8304-449ef9cd1f70">
+  <producedTypes>
+    <objectType typeId="537db1ea-1150-4840-94de-877799f8ec50" valueTypeId="e19e1884-10aa-406d-9bbf-55eb21821886"/>
+    <refType typeId="b3cdeeda-db12-4f84-a9f8-908357cc78fc" valueTypeId="23f23a28-572a-4e66-8f5d-8c44ef2ba561"/>
+    <selectionType typeId="d7440e73-f055-4239-af5f-62ab32f9faea" valueTypeId="6fc43901-bc21-4bd6-81d9-48afe619e6e8"/>
+    <listType typeId="814337a1-d6bd-42da-a8ce-20da941cb352" valueTypeId="5d96a4f8-057c-4b93-bc70-c3984b0dfff9"/>
+    <managerType typeId="05168360-431b-4f87-8dc9-9bd77d3709b0" valueTypeId="a02c338a-c357-4bd5-bd46-43de7df50773"/>
+  </producedTypes>
+  <name>ИТСервисы_ФайлыДокументации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Файлы документации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИТСервисы_ФайлыДокументации.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ИТСервисы_ФайлыДокументации.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="12d97d7a-5677-41ab-9d3b-16685aa58a4c">
+    <name>ДокументВладелец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ владелец</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ИТСервисы_РегистрацияДокументации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ba6e4dce-319c-46e6-a819-c5c962242527">
+    <name>ИдентификаторСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор строки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ce8ed15e-5dc7-4b67-b869-91c63b9f9b0e">
+    <name>ФайлХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл хранилище</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="077a6cae-765b-4cd6-93f0-435c7681a414">
+    <name>Расширение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -165,7 +165,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>CatalogObject.ИТСервисы_ТипыДокументацииСервисов</types>
+      <types>CatalogObject.ИТСервисы_ТипыДокументации</types>
     </valueType>
     <view>
       <common>true</common>
