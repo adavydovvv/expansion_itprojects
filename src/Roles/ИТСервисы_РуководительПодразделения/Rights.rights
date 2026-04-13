@@ -55,7 +55,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ИТСервисы_Задача</name>
+		<name>Document.ИТСервисы_Задачи</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -340,17 +340,6 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.ИТСервисы_РолиВКомандах</name>
 		<right>
 			<name>Read</name>
@@ -406,17 +395,6 @@
 	</object>
 	<object>
 		<name>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ИТСервисы_РесурсныйДоговор</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

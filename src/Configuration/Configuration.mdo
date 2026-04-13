@@ -76,13 +76,11 @@
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.ИТСервисы_Компетенции</catalogs>
   <catalogs>Catalog.ИТСервисы_ФайлыДокументации</catalogs>
-  <catalogs>Catalog.Файлы</catalogs>
-  <documents>Document.ИТСервисы_РесурсныйДоговор</documents>
   <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
   <documents>Document.ИТСервисы_РегистрацияДокументации</documents>
   <documents>Document.ИТСервисы_ПриказОВводеВПЭ</documents>
   <documents>Document.КадровыйПереводСписком</documents>
-  <documents>Document.ИТСервисы_Задача</documents>
+  <documents>Document.ИТСервисы_Задачи</documents>
   <documents>Document.ИТСервисы_УстановкаКвалификацииСотрудников</documents>
   <documents>Document.ИТСервисы_ФормированиеКомандыПроекта</documents>
   <documentJournals>DocumentJournal.ИТСервисы_Приказы</documentJournals>
@@ -113,7 +111,6 @@
   <informationRegisters>InformationRegister.ИТСервисы_КвалификацияСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_КомандыПроектов</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_КомпетенцииСотрудников</informationRegisters>
-  <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеРесурсовСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</accumulationRegisters>
 </mdclass:Configuration>

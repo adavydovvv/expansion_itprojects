@@ -11,6 +11,5 @@
     <value>Договоры</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <registeredDocuments>Document.ИТСервисы_РесурсныйДоговор</registeredDocuments>
   <registeredDocuments>Document.ИТСервисы_ДоговорСТехническимПровайдером</registeredDocuments>
 </mdclass:DocumentJournal>

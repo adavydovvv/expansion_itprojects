@@ -55,6 +55,25 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="97c20e5a-1271-49ab-910f-5103a856a76c">
+    <name>ЛимитЧасовВМесяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лимит часов в месяц</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <dimensions uuid="eeaeb434-f43c-4512-a8bc-2b35345db31b">
     <name>Проект</name>
     <synonym>

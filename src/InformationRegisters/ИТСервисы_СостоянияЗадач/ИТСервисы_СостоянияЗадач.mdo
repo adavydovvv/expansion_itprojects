@@ -73,13 +73,13 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <attributes uuid="08f35db3-0a4d-4e6b-8630-6ce54c5e6246">
-    <name>ИТСервис</name>
+    <name>Проект</name>
     <synonym>
       <key>ru</key>
-      <value>ИТСервис</value>
+      <value>Проект</value>
     </synonym>
     <type>
-      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+      <types>CatalogRef.ИТСервисы_Проекты</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -231,16 +231,13 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <dimensions uuid="be9b3943-fa72-4434-9b93-28da3391ccec">
-    <name>UUIDСтроки</name>
+    <name>Задача</name>
     <synonym>
       <key>ru</key>
       <value>Документ задач</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>36</length>
-      </stringQualifiers>
+      <types>DocumentRef.ИТСервисы_Задачи</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

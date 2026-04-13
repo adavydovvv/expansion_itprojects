@@ -166,18 +166,20 @@
 			ТОГДА "Нет"
 		ИНАЧЕ "-"
 	КОНЕЦ КАК БазаЗнаний,
-	ИТСервисы.Руководитель КАК РуководительСервиса,
 	ВЫБОР
-		КОГДА ИТСервисы.КодВАРМРазработчика &lt;&gt; ""
-			ТОГДА ИТСервисы.КодВАРМРазработчика
+		КОГДА ИТСервисы.КодВАРМРазработчика = ИСТИНА
+			ТОГДА "Да"
+		КОГДА ИТСервисы.КодВАРМРазработчика = ЛОЖЬ
+			ТОГДА "Нет"
 		ИНАЧЕ "-"
 	КОНЕЦ КАК КодВАРМРазработчика,
-	Парам.ДоговорТП.Номер КАК ДоговорТПНомер,
-	Парам.ДоговорТП.ДатаОкончание КАК ДоговорТПДатаОкончание,
-	Парам.ПриказОВводеВПЭ.Номер КАК ПриказВвод
+	Парам.ПриказОВводеВПЭ.Номер КАК ПриказВвод,
+	ИТСервисы.РуководительСервиса КАК РуководительСервиса,
+	ИТСервисы.ДоговорСТП.Номер КАК ДоговорТПНомер,
+	ИТСервисы.ДоговорСТП.ДатаОкончание КАК ДоговорТПДатаОкончание
 ИЗ
 	Справочник.ИТСервисы_ИТСервисы КАК ИТСервисы
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИТСервисы_ПараметрыИТСервисов.СрезПоследних(&amp;Период,) КАК Парам
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИТСервисы_ПараметрыИТСервисов.СрезПоследних(&amp;Период, ) КАК Парам
 		ПО ИТСервисы.Ссылка = Парам.ИТСервис
 ГДЕ
 	ИТСервисы.ПометкаУдаления = ЛОЖЬ
@@ -15320,10 +15322,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -15374,10 +15372,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -15426,18 +15420,14 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
@@ -15494,11 +15484,11 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -15665,11 +15655,11 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -15722,11 +15712,11 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -15836,11 +15826,11 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -16174,10 +16164,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">7.25</dcscor:value>
 						</dcscor:item>
@@ -16238,10 +16224,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">3.75</dcscor:value>
 						</dcscor:item>
@@ -16300,10 +16282,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -16352,10 +16330,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
@@ -16412,8 +16386,66 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
@@ -16470,20 +16502,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
-							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -16534,72 +16558,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
-							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-						</dcscor:item>
-					</dcsat:appearance>
-				</dcsat:tableCell>
-				<dcsat:tableCell>
-					<dcsat:appearance>
-						<dcscor:item>
-							<dcscor:parameter>СтильГраницы</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
-								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
-							</dcscor:value>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>Шрифт</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -16660,10 +16618,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">7.125</dcscor:value>
 						</dcscor:item>
@@ -16722,16 +16676,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -16784,16 +16734,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -16844,10 +16790,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -16908,16 +16850,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -16968,10 +16906,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -17030,10 +16964,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -17218,10 +17148,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -17270,10 +17196,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -17340,10 +17262,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">3.75</dcscor:value>
 						</dcscor:item>
@@ -17402,10 +17320,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -17454,10 +17368,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
@@ -17514,8 +17424,66 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
@@ -17572,20 +17540,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
-							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -17636,72 +17596,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
-							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-						</dcscor:item>
-					</dcsat:appearance>
-				</dcsat:tableCell>
-				<dcsat:tableCell>
-					<dcsat:appearance>
-						<dcscor:item>
-							<dcscor:parameter>СтильГраницы</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
-								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
-							</dcscor:value>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>Шрифт</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -17762,10 +17656,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">7.125</dcscor:value>
 						</dcscor:item>
@@ -17824,16 +17714,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -17886,16 +17772,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -17946,10 +17828,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -18010,16 +17888,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -18070,10 +17944,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -18132,10 +18002,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -18320,10 +18186,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -18372,10 +18234,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -18442,10 +18300,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">3.75</dcscor:value>
 						</dcscor:item>
@@ -18504,10 +18358,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -18556,10 +18406,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
@@ -18616,8 +18462,66 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
@@ -18674,20 +18578,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
-							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -18738,72 +18634,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
-							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-						</dcscor:item>
-					</dcsat:appearance>
-				</dcsat:tableCell>
-				<dcsat:tableCell>
-					<dcsat:appearance>
-						<dcscor:item>
-							<dcscor:parameter>СтильГраницы</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
-								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
-							</dcscor:value>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>Шрифт</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -18864,10 +18694,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">7.125</dcscor:value>
 						</dcscor:item>
@@ -18926,16 +18752,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -18988,16 +18810,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -19048,10 +18866,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -19112,16 +18926,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -19172,10 +18982,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -19234,10 +19040,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -19422,10 +19224,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -19474,10 +19272,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -19544,10 +19338,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">3.75</dcscor:value>
 						</dcscor:item>
@@ -19606,10 +19396,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -19658,10 +19444,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
@@ -19718,8 +19500,66 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
@@ -19776,20 +19616,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
-							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">6.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -19840,72 +19672,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
-							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-						</dcscor:item>
-					</dcsat:appearance>
-				</dcsat:tableCell>
-				<dcsat:tableCell>
-					<dcsat:appearance>
-						<dcscor:item>
-							<dcscor:parameter>СтильГраницы</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
-								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
-							</dcscor:value>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-							<dcscor:item>
-								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
-									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-								</dcscor:value>
-							</dcscor:item>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>Шрифт</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Font" faceName="Times New Roman" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -19966,10 +19732,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">7.125</dcscor:value>
 						</dcscor:item>
@@ -20028,16 +19790,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -20090,16 +19848,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -20150,10 +19904,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -20214,16 +19964,12 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">7</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">7.0</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
@@ -20274,10 +20020,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -20336,10 +20078,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -20524,10 +20262,6 @@
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
 							<dcscor:parameter>ОбъединятьПоВертикали</dcscor:parameter>
 							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 						</dcscor:item>
@@ -20576,10 +20310,6 @@
 						<dcscor:item>
 							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-						</dcscor:item>
-						<dcscor:item>
-							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
@@ -20622,6 +20352,10 @@
 			<dcsat:expression>ПланВИСУП</dcsat:expression>
 		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>КодВАРМРазработчика</dcsat:name>
+			<dcsat:expression>КодВАРМРазработчика</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>ДорожнаяКарта</dcsat:name>
 			<dcsat:expression>ДорожнаяКарта</dcsat:expression>
 		</parameter>
@@ -20642,20 +20376,16 @@
 			<dcsat:expression>БазаЗнаний</dcsat:expression>
 		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДоговорТПНомер</dcsat:name>
+			<dcsat:expression>ДоговорТПНомер</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>ДоговорТПДатаОкончание</dcsat:name>
 			<dcsat:expression>ДоговорТПДатаОкончание</dcsat:expression>
 		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>РуководительСервиса</dcsat:name>
 			<dcsat:expression>Представление(РуководительСервиса)</dcsat:expression>
-		</parameter>
-		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
-			<dcsat:name>КодВАРМРазработчика</dcsat:name>
-			<dcsat:expression>КодВАРМРазработчика</dcsat:expression>
-		</parameter>
-		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
-			<dcsat:name>ДоговорТПНомер</dcsat:name>
-			<dcsat:expression>ДоговорТПНомер</dcsat:expression>
 		</parameter>
 	</template>
 	<groupTemplate>
@@ -20785,6 +20515,23 @@
 					<dcsset:userSettingID>ea8e9ecf-bc15-4286-b4f2-24e0b77a1c73</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=dd.MM.yyyy</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>

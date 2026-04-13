@@ -51,13 +51,13 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <dimensions uuid="4a00a5c0-f333-4c52-9a95-a8436e4e2a15">
-    <name>ИТСервис</name>
+    <name>Проект</name>
     <synonym>
       <key>ru</key>
-      <value>ИТСервис</value>
+      <value>Проект</value>
     </synonym>
     <type>
-      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+      <types>CatalogRef.ИТСервисы_Проекты</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
