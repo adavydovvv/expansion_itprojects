@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e71e02c-0fb3-455b-8609-3855af08818b">
+  <producedTypes>
+    <selectionType typeId="2dec55e2-40cf-4a50-8e51-144e8fe53427" valueTypeId="467fdc9e-bf64-4b74-8794-e94749bfd63a"/>
+    <listType typeId="820d5354-429e-4935-b147-74f54e00c86f" valueTypeId="d6dbc754-b1d5-4fa8-a045-ced5cedd8d31"/>
+    <managerType typeId="d69174ac-dea7-497d-8fa3-c3852409cfa9" valueTypeId="3588ed7a-8d94-4a9d-a2c1-45b71902985b"/>
+    <recordSetType typeId="2f08b9df-fa21-4100-991b-21fcc8c20a87" valueTypeId="061c1d08-36c5-4f8b-9d09-219e73f63bf6"/>
+    <recordKeyType typeId="25374440-0ec4-45a5-b171-e798eaf6f275" valueTypeId="176f2cb4-7a7b-4fc6-a791-1fa521b3192b"/>
+    <recordType typeId="1e97f586-2533-4ef9-91f3-5b716eb8d590" valueTypeId="ea75b252-0bc6-4ef9-ab5c-55c1e0c074b3"/>
+    <recordManagerType typeId="5d0e15c3-1d35-4f73-82f4-7c2889ed7ff4" valueTypeId="d8d9a6a7-36d6-43b9-8e36-c3435854cf68"/>
+  </producedTypes>
+  <name>ИТСервисы_СтатусыОбъектовИТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы объектов ИТ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="3aec6003-6474-44b2-8889-ccb99aaaf0e4">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ИТСервисы_СтатусыЖизненногоЦикла</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3841899a-7a31-4ba3-8cac-eb7293ff2712">
+    <name>ОбъектУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект учета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_Проекты</types>
+      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -12,4 +12,5 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <registeredDocuments>Document.ИТСервисы_ДоговорСТехническимПровайдером</registeredDocuments>
+  <registeredDocuments>Document.ИТСервисы_СоглашениеОбУровнеСервиса</registeredDocuments>
 </mdclass:DocumentJournal>

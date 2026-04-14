@@ -11,12 +11,14 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.ИТСервисы_ДоговорСТехническимПровайдером</content>
-  <content>Document.ИТСервисы_РегистрацияДокументации</content>
+  <content>Document.ИТСервисы_УтверждениеДокументации</content>
   <content>Document.ИТСервисы_ПриказОВводеВПЭ</content>
   <content>Document.ИТСервисы_Задачи</content>
   <content>DocumentJournal.ИТСервисы_Приказы</content>
   <content>DocumentJournal.ИТСервисы_Договоры</content>
   <content>Document.ИТСервисы_УстановкаКвалификацииСотрудников</content>
   <content>Document.ИТСервисы_ФормированиеКомандыПроекта</content>
+  <content>Document.ИТСервисы_СоглашениеОбУровнеСервиса</content>
+  <content>Document.ИТСервисы_ПриказОВыводеИзПЭ</content>
   <parentSubsystem>Subsystem.ИТСервисы_ИТСервисы</parentSubsystem>
 </mdclass:Subsystem>

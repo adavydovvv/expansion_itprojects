@@ -53,14 +53,6 @@
 				<dcscom:periodType>Main</dcscom:periodType>
 			</role>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ГоловнаяОрганизация</dataPath>
-			<field>ГоловнаяОрганизация</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ФизическоеЛицо</dataPath>
-			<field>ФизическоеЛицо</field>
-		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Команды.Проект.ИТСервис КАК ИТСервис, 
@@ -6603,7 +6595,12 @@
 	</groupHeaderTemplate>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
-		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Загрузка сотрудников по ИТ-Сервисам</v8:content>
+			</v8:item>
+		</dcsset:presentation>
 		<dcsset:settings xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">

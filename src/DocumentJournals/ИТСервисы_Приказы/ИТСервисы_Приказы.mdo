@@ -14,5 +14,6 @@
   <registeredDocuments>Document.ИТСервисы_ПриказОВводеВПЭ</registeredDocuments>
   <registeredDocuments>Document.ИТСервисы_УстановкаКвалификацииСотрудников</registeredDocuments>
   <registeredDocuments>Document.ИТСервисы_ФормированиеКомандыПроекта</registeredDocuments>
-  <registeredDocuments>Document.ИТСервисы_РегистрацияДокументации</registeredDocuments>
+  <registeredDocuments>Document.ИТСервисы_УтверждениеДокументации</registeredDocuments>
+  <registeredDocuments>Document.ИТСервисы_ПриказОВыводеИзПЭ</registeredDocuments>
 </mdclass:DocumentJournal>

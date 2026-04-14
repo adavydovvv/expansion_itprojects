@@ -583,7 +583,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DocumentObject.ИТСервисы_РегистрацияДокументации</types>
+      <types>DocumentObject.ИТСервисы_УтверждениеДокументации</types>
     </valueType>
     <view>
       <common>true</common>

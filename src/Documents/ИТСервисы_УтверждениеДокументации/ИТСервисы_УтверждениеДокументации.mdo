@@ -7,13 +7,13 @@
     <listType typeId="b2a483aa-c4e0-40f2-ba05-02d85aae647e" valueTypeId="82fbf234-9e73-42c6-b942-e9e3a634caf0"/>
     <managerType typeId="7fe458b5-04a8-4dca-a982-c405ac19b0e8" valueTypeId="12041e91-8b89-41f7-95d0-fd633cab9138"/>
   </producedTypes>
-  <name>ИТСервисы_РегистрацияДокументации</name>
+  <name>ИТСервисы_УтверждениеДокументации</name>
   <synonym>
     <key>ru</key>
-    <value>Регистрация документации</value>
+    <value>Утверждение документации</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.ИТСервисы_РегистрацияДокументации.StandardAttribute.Number</inputByString>
+  <inputByString>Document.ИТСервисы_УтверждениеДокументации.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -31,7 +31,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ИТСервисы_РегистрацияДокументации.Form.ФормаДокумента</defaultObjectForm>
+  <defaultObjectForm>Document.ИТСервисы_УтверждениеДокументации.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>InformationRegister.ИТСервисы_ПараметрыИТСервисов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>

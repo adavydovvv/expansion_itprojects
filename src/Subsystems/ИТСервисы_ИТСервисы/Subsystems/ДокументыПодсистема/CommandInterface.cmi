@@ -19,7 +19,7 @@
       <commands>Document.ИТСервисы_УстановкаКвалификацииСотрудников.StandardCommand.OpenList</commands>
       <commands>Document.ИТСервисы_ФормированиеКомандыПроекта.StandardCommand.OpenList</commands>
       <commands>Document.ИТСервисы_ДоговорСТехническимПровайдером.StandardCommand.OpenList</commands>
-      <commands>Document.ИТСервисы_РегистрацияДокументации.StandardCommand.OpenList</commands>
+      <commands>Document.ИТСервисы_УтверждениеДокументации.StandardCommand.OpenList</commands>
       <commands>Document.ИТСервисы_ПриказОВводеВПЭ.StandardCommand.OpenList</commands>
     </orderFragments>
   </commandsOrder>

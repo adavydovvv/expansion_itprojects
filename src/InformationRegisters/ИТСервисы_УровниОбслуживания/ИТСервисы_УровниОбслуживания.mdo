@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4033e5e3-b8ad-41f3-beac-0d498dec34a1">
+  <producedTypes>
+    <selectionType typeId="4f49cabc-791a-4f92-b36f-12ede387286a" valueTypeId="d3f8249d-54a6-4d48-b345-6d6dfb9f3c7f"/>
+    <listType typeId="e976b3f1-1cae-4ef3-ab72-cd2a6c69a9fc" valueTypeId="37ad3056-4c37-4548-bcaf-d0c36ad8f90b"/>
+    <managerType typeId="2f1059af-f738-4f50-bd7f-2526ab18502f" valueTypeId="bd743f3b-54ae-4ecc-b8bf-3a025b86bc96"/>
+    <recordSetType typeId="97196221-be8e-4c69-b93e-07935daf7959" valueTypeId="27ff41c6-35f9-48bc-a849-c236b425230e"/>
+    <recordKeyType typeId="306f9dda-2bda-4f22-ae94-1b5a3ff81c94" valueTypeId="ebd91888-b0dd-4c06-bc3e-e1dd782f75b8"/>
+    <recordType typeId="688fa4c4-71ea-4ab7-b1c4-3cc7195de87e" valueTypeId="dddc4582-8b52-455d-845e-c28457fa4a26"/>
+    <recordManagerType typeId="7d72f48a-7f48-424d-9856-a2e26343dd86" valueTypeId="05163d55-9157-41ed-a3d6-75add6639a5a"/>
+  </producedTypes>
+  <name>ИТСервисы_УровниОбслуживания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уровни обслуживания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="501d0bc3-88b8-4b2d-bbbf-2250abf1a465">
+    <name>ВремяРеакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время реакции</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0135b4d4-00a2-4f51-9fb0-c35bd7e79ee8">
+    <name>ВремяРешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время решения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c538749e-733a-4674-bd45-1ab1e15bf30f">
+    <name>Доступность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d409cc17-d524-4108-a571-571ed8bc9c07">
+    <name>ИТСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИТСервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d0034ea9-4b8c-4f76-8d8d-84d03be48aa1">
+    <name>Провайдер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Провайдер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

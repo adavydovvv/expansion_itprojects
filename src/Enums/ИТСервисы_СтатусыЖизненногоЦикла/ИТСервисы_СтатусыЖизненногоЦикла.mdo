@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44928a38-5365-493a-9aaa-b8b6bbe1cd68">
+  <producedTypes>
+    <refType typeId="73a2fee9-8a00-4312-9822-bbe11bb4b6f9" valueTypeId="ab591391-a694-4459-ac7e-db772ee5e1c9"/>
+    <listType typeId="81dafb4c-ac32-46d9-8c59-c9083a4c11e8" valueTypeId="a0208cb5-bccf-41bd-b03b-43701c4c6f0e"/>
+    <managerType typeId="3cc37a2f-1824-4e0a-ae5f-33d255231835" valueTypeId="b26d6c73-5b1e-4ecf-a390-fb8f8489f210"/>
+  </producedTypes>
+  <name>ИТСервисы_СтатусыЖизненногоЦикла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы жизненного цикла</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f3e7aa85-86e6-4bd0-b615-e2deec16591e">
+    <name>ВРазработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>В разработке</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dbbade9a-0987-4658-b265-2d6f5cf24cc5">
+    <name>Завершен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3a1dd7d1-aafb-4e27-8bc2-48cd7483b295">
+    <name>ВПромышленнойЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>В промышленной эксплуатации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="26f94cee-3e33-4aed-981a-7521111fc289">
+    <name>ВыведенИзЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выведен из эксплуатации</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

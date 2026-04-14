@@ -254,7 +254,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ИТСервисы_РегистрацияДокументации</name>
+		<name>Document.ИТСервисы_УтверждениеДокументации</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

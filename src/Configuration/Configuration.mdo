@@ -76,17 +76,19 @@
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.ИТСервисы_Компетенции</catalogs>
   <catalogs>Catalog.ИТСервисы_ФайлыДокументации</catalogs>
+  <catalogs>Catalog.СоглашенияСПоставщиками</catalogs>
   <documents>Document.ИТСервисы_ДоговорСТехническимПровайдером</documents>
-  <documents>Document.ИТСервисы_РегистрацияДокументации</documents>
+  <documents>Document.ИТСервисы_УтверждениеДокументации</documents>
   <documents>Document.ИТСервисы_ПриказОВводеВПЭ</documents>
   <documents>Document.КадровыйПереводСписком</documents>
   <documents>Document.ИТСервисы_Задачи</documents>
   <documents>Document.ИТСервисы_УстановкаКвалификацииСотрудников</documents>
   <documents>Document.ИТСервисы_ФормированиеКомандыПроекта</documents>
+  <documents>Document.ИТСервисы_СоглашениеОбУровнеСервиса</documents>
+  <documents>Document.ИТСервисы_ПриказОВыводеИзПЭ</documents>
   <documentJournals>DocumentJournal.ИТСервисы_Приказы</documentJournals>
   <documentJournals>DocumentJournal.ИТСервисы_Договоры</documentJournals>
   <enums>Enum.ИТСервисы_СтатусыСервисов</enums>
-  <enums>Enum.ИТСервисы_СтатусыПрогноза</enums>
   <enums>Enum.ИТСервисы_СтатусыДокументации</enums>
   <enums>Enum.ИТСервисы_СтатусыДокументаНазначения</enums>
   <enums>Enum.ИТСервисы_ТипыДоговоров</enums>
@@ -100,8 +102,10 @@
   <enums>Enum.ИТСервисы_СтатусыЛицензий</enums>
   <enums>Enum.ИТСервисы_СтатусыПроектов</enums>
   <enums>Enum.ИТСервисы_Грейды</enums>
+  <enums>Enum.ИТСервисы_СтатусыЖизненногоЦикла</enums>
   <reports>Report.ИТСервисы_ХарактеристикиИТСервисов</reports>
   <reports>Report.ИТСервисы_ЗагрузкаСотрудниковПоИТСервисам</reports>
+  <reports>Report.ИТСервисы_ДинамикаРешенияЗадач</reports>
   <dataProcessors>DataProcessor.ИТСервисы_ЗаполнениеДанныхДляИнтеграции</dataProcessors>
   <informationRegisters>InformationRegister.ИТСервисы_ПараметрыИТСервисов</informationRegisters>
   <informationRegisters>InformationRegister.КадроваяИсторияСотрудников</informationRegisters>
@@ -111,6 +115,8 @@
   <informationRegisters>InformationRegister.ИТСервисы_КвалификацияСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_КомандыПроектов</informationRegisters>
   <informationRegisters>InformationRegister.ИТСервисы_КомпетенцииСотрудников</informationRegisters>
+  <informationRegisters>InformationRegister.ИТСервисы_СтатусыОбъектовИТ</informationRegisters>
+  <informationRegisters>InformationRegister.ИТСервисы_УровниОбслуживания</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_ДвижениеДоговоровСервисов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</accumulationRegisters>
 </mdclass:Configuration>

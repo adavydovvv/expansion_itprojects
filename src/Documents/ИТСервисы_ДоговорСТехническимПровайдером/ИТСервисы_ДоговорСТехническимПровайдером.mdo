@@ -51,7 +51,7 @@
       <value>Тех провайдер</value>
     </synonym>
     <type>
-      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.Партнеры</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

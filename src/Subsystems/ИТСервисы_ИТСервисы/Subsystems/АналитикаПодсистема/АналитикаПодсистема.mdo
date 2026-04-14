@@ -18,5 +18,7 @@
   <content>AccumulationRegister.ИТСервисы_НагрузкаСотрудникаПоЗадачам</content>
   <content>InformationRegister.ИТСервисы_СостоянияЛицензий</content>
   <content>InformationRegister.ИТСервисы_КвалификацияСотрудников</content>
+  <content>InformationRegister.ИТСервисы_СтатусыОбъектовИТ</content>
+  <content>Report.ИТСервисы_ДинамикаРешенияЗадач</content>
   <parentSubsystem>Subsystem.ИТСервисы_ИТСервисы</parentSubsystem>
 </mdclass:Subsystem>

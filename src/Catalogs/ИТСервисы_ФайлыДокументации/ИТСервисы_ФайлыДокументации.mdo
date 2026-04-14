@@ -36,7 +36,7 @@
       <value>Документ владелец</value>
     </synonym>
     <type>
-      <types>DocumentRef.ИТСервисы_РегистрацияДокументации</types>
+      <types>DocumentRef.ИТСервисы_УтверждениеДокументации</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
