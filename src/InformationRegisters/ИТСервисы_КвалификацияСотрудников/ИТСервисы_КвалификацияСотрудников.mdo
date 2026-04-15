@@ -21,21 +21,6 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
   <enableTotalsSliceLast>true</enableTotalsSliceLast>
-  <resources uuid="d04e155f-3c4a-4566-8520-ecf2c7da14ff">
-    <name>Роль</name>
-    <synonym>
-      <key>ru</key>
-      <value>Роль</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ИТСервисы_РолиВКомандах</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="55761c78-ce01-4e84-b1a3-50e5ecde7225">
     <name>СтавкаЧас</name>
     <synonym>
@@ -97,6 +82,22 @@
     </synonym>
     <type>
       <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6cb603e5-1d48-479a-aada-f9fcaea0a4a5">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИТСервисы_РолиВКомандах</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

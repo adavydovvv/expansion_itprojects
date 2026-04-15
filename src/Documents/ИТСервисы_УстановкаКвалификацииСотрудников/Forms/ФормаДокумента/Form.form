@@ -353,6 +353,14 @@
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
+        <handlers>
+          <event>BeforeDeleteRow</event>
+          <name>СоставПередУдалением</name>
+        </handlers>
+        <handlers>
+          <event>OnChange</event>
+          <name>СоставСотрудникПриИзменении</name>
+        </handlers>
         <searchStringAddition>
           <name>СоставСтрокаПоиска</name>
           <id>14</id>

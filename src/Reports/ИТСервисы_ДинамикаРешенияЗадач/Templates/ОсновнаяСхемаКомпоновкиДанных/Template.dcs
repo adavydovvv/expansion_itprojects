@@ -59,9 +59,9 @@
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	СостоянияЗадач.Проект КАК Проект,
-	СостоянияЗадач.Исполнитель КАК Исполнитель,
-	СостоянияЗадач.Задача КАК Задача,
+	СостоянияЗадач.Проект.Ссылка КАК Проект,
+	СостоянияЗадач.Исполнитель.Ссылка КАК Исполнитель,
+	СостоянияЗадач.Задача.Ссылка КАК Задача,
 	СостоянияЗадач.Приоритет КАК Приоритет,
 	СостоянияЗадач.Статус КАК СтатусВнутренний,
 	СостоянияЗадач.ПлановаяТрудоемкость КАК ПлановаяТрудоемкость,
@@ -4196,7 +4196,7 @@
 		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>Проект</dcsat:name>
-			<dcsat:expression>Представление(Проект)</dcsat:expression>
+			<dcsat:expression>Проект</dcsat:expression>
 		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>Исполнитель</dcsat:name>
@@ -4204,7 +4204,7 @@
 		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>Задача</dcsat:name>
-			<dcsat:expression>Представление(Задача)</dcsat:expression>
+			<dcsat:expression>Задача</dcsat:expression>
 		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>ЗадачаОписание</dcsat:name>
@@ -4276,6 +4276,12 @@
 						</v8:item>
 					</dcsset:presentation>
 					<dcsset:userSettingID>5b396134-908e-4641-96af-436fc1820f3e</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:dataParameters>
