@@ -216,10 +216,10 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="7ea27723-7b99-4a28-831c-78687496c02d">
-    <name>ServicePropertyID</name>
+    <name>ProjectPropertyID</name>
     <synonym>
       <key>ru</key>
-      <value>Service property ID</value>
+      <value>Project property ID</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -288,13 +288,13 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <dimensions uuid="5b9a812b-5b5f-4861-afb7-2f063e9874bb">
-    <name>ИТСервис</name>
+    <name>Проект</name>
     <synonym>
       <key>ru</key>
-      <value>ИТСервис</value>
+      <value>Проект</value>
     </synonym>
     <type>
-      <types>CatalogRef.ИТСервисы_ИТСервисы</types>
+      <types>CatalogRef.ИТСервисы_Проекты</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

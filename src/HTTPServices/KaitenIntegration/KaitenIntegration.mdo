@@ -64,23 +64,23 @@
       <key>ru</key>
       <value>Получение настроек сервиса</value>
     </synonym>
-    <template>/settings/services</template>
+    <template>/settings/projects</template>
     <methods uuid="2259cb2b-e5d6-4081-9ade-bf95e88a834f">
-      <name>SettingsServicesGET</name>
+      <name>SettingsProjectsGET</name>
       <synonym>
         <key>ru</key>
-        <value>Settings services GET</value>
+        <value>Settings projects GET</value>
       </synonym>
-      <handler>SettingsServicesGET</handler>
+      <handler>SettingsProjectsGET</handler>
     </methods>
     <methods uuid="e6cd8792-fff0-4707-a3e8-58a76fb418cb">
-      <name>SettingsServicesPOST</name>
+      <name>SettingsProjectsPOST</name>
       <synonym>
         <key>ru</key>
-        <value>Settings services POST</value>
+        <value>Settings projects POST</value>
       </synonym>
       <httpMethod>POST</httpMethod>
-      <handler>SettingsServicesPOST</handler>
+      <handler>SettingsProjectsPOST</handler>
     </methods>
   </urlTemplates>
   <urlTemplates uuid="41363947-b0b4-450f-aea9-8ea8082106d1">
