@@ -12,7 +12,7 @@
   <name>ИТСервисы_НастройкиИнтеграцииKaiten</name>
   <synonym>
     <key>ru</key>
-    <value>Список ИТ-Сервисов для интеграции</value>
+    <value>Список проектов для интеграции</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>

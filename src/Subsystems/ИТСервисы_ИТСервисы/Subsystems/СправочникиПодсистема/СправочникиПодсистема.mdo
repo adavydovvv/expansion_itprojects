@@ -11,15 +11,12 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.ИТСервисы_ИТСервисы</content>
-  <content>Catalog.Сотрудники</content>
   <content>Catalog.ИТСервисы_РолиВКомандах</content>
   <content>Catalog.ИТСервисы_ТипыДокументации</content>
-  <content>Catalog.Организации</content>
   <content>Catalog.ИТСервисы_ПрограммныеОбеспечения</content>
   <content>Catalog.ИТСервисы_ТипыПО</content>
   <content>Catalog.ИТСервисы_ЛицензииПО</content>
   <content>Catalog.ИТСервисы_Проекты</content>
   <content>Catalog.ИТСервисы_Компетенции</content>
-  <content>Catalog.Партнеры</content>
   <parentSubsystem>Subsystem.ИТСервисы_ИТСервисы</parentSubsystem>
 </mdclass:Subsystem>
